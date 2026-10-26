@@ -1,18 +1,22 @@
-name: ChatGPT Users ML CI-CD
+
+name: ChatGPT User Satisfaction ML CI
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
-  train-test-deliver:
+  train-and-test:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -20,37 +24,31 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
+          cache: "pip"
 
-      - name: Install dependencies
+      - name: Upgrade pip
+        run: python -m pip install --upgrade pip
+
+      - name: Install ML dependencies
         run: pip install -r requirements.txt
 
-      - name: Train model
+      - name: Train ChatGPT satisfaction model
         run: python train_model.py
 
-      - name: Quality Gate
+      - name: Check ML quality gate
         run: python quality_gate.py
 
-      - name: Run ML tests
-        run: python -m unittest test_ml_pipeline.py -v
+      - name: Run automated ML tests
+        run: python -m unittest discover -v
 
-      - name: Run prediction app tests
-        run: python -m unittest test_app.py -v
-
-      - name: Prepare release candidate
-        run: |
-          mkdir -p release_candidate
-          cp app.py release_candidate/
-          cp artifacts/model.joblib release_candidate/
-          cp artifacts/metrics.json release_candidate/
-          cp requirements.txt release_candidate/
-          echo "ChatGPT Users ML App" > release_candidate/DEPLOYMENT.txt
-          echo "Run: python app.py" >> release_candidate/DEPLOYMENT.txt
-          echo "Endpoint: POST /predict" >> release_candidate/DEPLOYMENT.txt
-
-      - name: Upload release candidate
+      - name: Preserve ChatGPT satisfaction ML artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: chatgpt-users-ml-release
-          path: release_candidate/
+          name: chatgpt-satisfaction-artifacts
+          path: |
+            artifacts/chatgpt_satisfaction_pipeline.joblib
+            outputs/metrics.json
+            outputs/chatgpt-users.csv
           if-no-files-found: error
+          retention-days: 7
