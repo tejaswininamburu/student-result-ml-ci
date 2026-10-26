@@ -5,7 +5,7 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-# Your model is saved in the artifacts folder
+# Your model is in the artifacts folder
 MODEL_PATH = Path("artifacts/model.joblib")
 
 def load_model():
@@ -26,18 +26,15 @@ def predict():
     if not data:
         return jsonify({"error": "JSON request body is required"}), 400
 
-    # Convert incoming JSON into a pandas DataFrame (1 row)
+    # Convert incoming JSON to a DataFrame
     sample = pd.DataFrame([data])
 
-    try:
-        model = load_model()
-        prediction = model.predict(sample)[0]
-        
-        return jsonify({
-            "prediction": str(prediction)
-        })
-    except Exception as e:
-        return jsonify({"error": str(e)}), 400
+    model = load_model()
+    prediction = model.predict(sample)[0]
+    
+    return jsonify({
+        "prediction": str(prediction)
+    })
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
