@@ -1,17 +1,18 @@
-
-name: ChatGPT User Satisfaction ML CI
+name: ChatGPT Users ML CI-CD
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]
   pull_request:
-    branches: [main]
+    branches: [ main ]
   workflow_dispatch:
 
-jobs:
-  train-test-quality:
-    runs-on: ubuntu-latest
+permissions:
+  contents: read
 
+jobs:
+  train-test-deliver:
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -19,26 +20,36 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: '3.11'
 
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
 
-      - name: Run pipeline tests
-        run: pytest -q
-
-      - name: Train satisfaction model
+      - name: Train model
         run: python train_model.py
 
-      - name: Run quality gate
+      - name: Quality Gate
         run: python quality_gate.py
 
-      - name: Upload model artifacts
-        if: always()
+      - name: Run ML tests
+        run: python -m unittest test_ml_pipeline.py -v
+
+      # --- NEW PRACTICAL 5 STEPS ---
+      - name: Run prediction app tests
+        run: python -m unittest test_app.py -v
+
+      - name: Prepare release candidate
+        run: |
+          mkdir -p release_candidate
+          cp app.py release_candidate/
+          cp *.pkl release_candidate/ 
+          cp metrics.json release_candidate/
+          cp requirements.txt release_candidate/
+          printf "ChatGPT Users ML App\nRun: python app.py\nEndpoint: POST /predict\n" > release_candidate/DEPLOYMENT.txt
+
+      - name: Upload release candidate
         uses: actions/upload-artifact@v4
         with:
-          name: chatgpt-satisfaction-model
-          path: artifacts/
-          if-no-files-found: warn
+          name: chatgpt-users-ml-release
+          path: release_candidate/
+          if-no-files-found: error
