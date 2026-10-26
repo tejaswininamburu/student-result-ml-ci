@@ -1,5 +1,5 @@
 
-name: ChatGPT User Satisfaction ML CI
+name: ChatGPT User Satisfaction ML CI-CD
 
 on:
   push:
@@ -14,7 +14,7 @@ permissions:
   contents: read
 
 jobs:
-  train-and-test:
+  train-test-deliver:
     runs-on: ubuntu-latest
 
     steps:
@@ -30,7 +30,7 @@ jobs:
       - name: Upgrade pip
         run: python -m pip install --upgrade pip
 
-      - name: Install ML dependencies
+      - name: Install dependencies
         run: pip install -r requirements.txt
 
       - name: Train ChatGPT satisfaction model
@@ -42,13 +42,29 @@ jobs:
       - name: Run ChatGPT satisfaction ML tests
         run: python -m unittest -v test_ml_pipeline
 
-      - name: Preserve ChatGPT satisfaction ML artifacts
+      - name: Run prediction application tests
+        run: python -m unittest -v test_app
+
+      - name: Prepare release candidate
+        run: |
+          mkdir -p release_candidate/artifacts
+          cp app.py release_candidate/
+          cp artifacts/chatgpt_satisfaction_pipeline.joblib release_candidate/artifacts/
+          cp outputs/metrics.json release_candidate/
+          cp requirements.txt release_candidate/
+
+          printf '%s\n' \
+            'ChatGPT User Satisfaction Prediction API' \
+            'Install dependencies: pip install -r requirements.txt' \
+            'Start application: python app.py' \
+            'Health endpoint: GET /' \
+            'Prediction endpoint: POST /predict' \
+            > release_candidate/DEPLOYMENT.txt
+
+      - name: Upload release candidate
         uses: actions/upload-artifact@v4
         with:
-          name: chatgpt-satisfaction-artifacts
-          path: |
-            artifacts/chatgpt_satisfaction_pipeline.joblib
-            outputs/metrics.json
-            outputs/chatgpt-users.csv
+          name: chatgpt-satisfaction-release
+          path: release_candidate/
           if-no-files-found: error
           retention-days: 7
