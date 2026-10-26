@@ -43,7 +43,16 @@ class TestPredictionApplication(unittest.TestCase):
         result = response.get_json()
 
         self.assertIn("prediction", result)
-        self.assertIn("Satisfaction", result["prediction"])
+        self.assertIn(
+    result["prediction"],
+    [
+        "Very Satisfied",
+        "Satisfied",
+        "Neutral",
+        "Dissatisfied",
+        "Very Dissatisfied"
+    ]
+)
         self.assertEqual(result["target"], "Satisfaction")
 
     def test_missing_fields(self):
