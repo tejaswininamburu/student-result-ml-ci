@@ -12,11 +12,7 @@ class TestPredictionApplication(unittest.TestCase):
         self.assertEqual(response.get_json()["status"], "ok")
 
     def test_prediction_success(self):
-        payload = {
-            "Sessions": 50,
-            "Messages_Sent": 200,
-            "Files_Uploaded": 5
-        }
+        payload = {"Sessions": 50, "Messages_Sent": 200, "Files_Uploaded": 5}
         response = self.client.post("/predict", json=payload)
         self.assertEqual(response.status_code, 200)
         self.assertIn("prediction", response.get_json())
