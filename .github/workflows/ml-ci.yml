@@ -1,52 +1,44 @@
-name: Student Result ML CI
+
+name: ChatGPT User Satisfaction ML CI
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
-    branches:
-      - main
+    branches: [main]
   workflow_dispatch:
 
-permissions:
-  contents: read
-
 jobs:
-  train-and-test:
+  train-test-quality:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v7
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v7
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
-      - name: Upgrade pip
-        run: python -m pip install --upgrade pip
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-      - name: Install ML dependencies
-        run: pip install -r requirements.txt
+      - name: Run pipeline tests
+        run: pytest -q
 
-      - name: Train student result model
+      - name: Train satisfaction model
         run: python train_model.py
 
-      - name: Check ML quality gate
+      - name: Run quality gate
         run: python quality_gate.py
 
-      - name: Run automated ML tests
-        run: python -m unittest discover -v
-
-      - name: Upload validated ML artifacts
-        uses: actions/upload-artifact@v7
+      - name: Upload model artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
         with:
-          name: student-result-ml-artifacts
-          path: |
-            student_result_model.pkl
-            metrics.json
-            student_results.csv
-          if-no-files-found: error
-          retention-days: 7
+          name: chatgpt-satisfaction-model
+          path: artifacts/
+          if-no-files-found: warn
