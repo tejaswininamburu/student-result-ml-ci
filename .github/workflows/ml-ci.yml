@@ -45,9 +45,10 @@ jobs:
           cp artifacts/model.joblib release_candidate/
           cp artifacts/metrics.json release_candidate/
           cp requirements.txt release_candidate/
-          cp Dockerfile release_candidate/
-          cp .dockerignore release_candidate/
-          printf "ChatGPT Users ML App\nRun: python app.py\nEndpoint: POST /predict\n" > release_candidate/DEPLOYMENT.txt
+          echo "ChatGPT Users ML App" > release_candidate/DEPLOYMENT.txt
+          echo "Run: python app.py" >> release_candidate/DEPLOYMENT.txt
+          echo "Endpoint: POST /predict" >> release_candidate/DEPLOYMENT.txt
+
 
       - name: Upload release candidate
         uses: actions/upload-artifact@v4
