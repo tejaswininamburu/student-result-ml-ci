@@ -1,0 +1,501 @@
+User_ID,Name,Age,Country,Plan,Primary_Use_Case,Device,Signup_Date,Last_Active_Date,Sessions,Avg_Session_Minutes,Messages_Sent,Files_Uploaded,Images_Generated,Favorite_Model,Satisfaction,Monthly_Spend_USD,Notifications_Enabled,Dark_Mode
+U0001,Ishita Sharma,52,United States,Plus,Brainstorming,iOS,2025-10-09,2026-02-11,58,9.3,424,4,3,GPT-5.6,Satisfied,20,Yes,Yes
+U0002,Tanya Mehta,18,United Kingdom,Plus,Learning,Android,2026-07-13,2026-08-08,57,23.2,1144,35,19,GPT-5,Neutral,20,Yes,Yes
+U0003,Karan Nair,52,United States,Plus,Learning,Windows,2026-01-03,2026-08-07,89,30.2,182,70,37,Auto,Neutral,20,Yes,Yes
+U0004,Ananya Iyer,58,Germany,Free,Research,Android,2025-10-24,2025-12-03,60,42.0,1561,45,26,GPT-4.1,Very Satisfied,0,Yes,Yes
+U0005,Meera Pillai,21,Canada,Plus,Coding,Android,2026-01-24,2026-04-03,164,34.0,904,51,34,GPT-5.6,Satisfied,20,No,Yes
+U0006,Sneha Joshi,65,Brazil,Free,Learning,Linux,2026-04-15,2026-05-21,68,9.3,2304,51,46,GPT-5,Satisfied,0,No,Yes
+U0007,Ananya Nair,42,Singapore,Plus,Brainstorming,iOS,2025-06-06,2026-04-23,41,38.6,1734,67,32,Auto,Very Satisfied,20,Yes,No
+U0008,Aditya Nair,29,Japan,Team,Writing,Android,2025-10-28,2026-06-07,41,23.4,1083,107,64,Auto,Satisfied,30,Yes,No
+U0009,Meera Naidu,41,Australia,Free,Data Analysis,Windows,2026-06-28,2026-06-28,154,17.6,84,30,72,GPT-5.6,Very Satisfied,0,No,Yes
+U0010,Tanya Rao,56,Singapore,Free,Data Analysis,Linux,2025-05-12,2026-04-14,122,45.6,681,96,25,GPT-4.1,Dissatisfied,0,No,No
+U0011,Vikram Pillai,32,Brazil,Plus,Data Analysis,Windows,2025-05-04,2025-09-07,58,5.9,91,9,80,GPT-5.6,Satisfied,20,Yes,Yes
+U0012,Aditya Patel,64,Brazil,Free,Brainstorming,iOS,2026-06-11,2026-07-11,72,33.1,882,31,60,GPT-4o,Satisfied,0,Yes,Yes
+U0013,Priya Kumar,59,United States,Plus,Coding,iOS,2026-03-10,2026-06-23,120,41.9,226,93,43,GPT-5.6,Satisfied,20,Yes,Yes
+U0014,Tanya Pillai,22,UAE,Pro,Image Generation,Windows,2025-05-24,2025-12-26,47,15.5,1028,6,69,GPT-5.6,Very Satisfied,200,Yes,Yes
+U0015,Priya Bose,42,Australia,Free,Business,Android,2026-05-08,2026-06-04,103,43.6,679,54,71,GPT-4o,Satisfied,0,Yes,No
+U0016,Rohan Reddy,51,United Kingdom,Free,Coding,Linux,2026-07-10,2026-07-13,81,5.6,2397,10,23,GPT-5.6,Very Dissatisfied,0,Yes,Yes
+U0017,Karan Nair,55,Brazil,Free,Image Generation,Android,2026-08-07,2026-08-10,149,29.8,340,119,33,GPT-5,Neutral,0,Yes,No
+U0018,Karan Rao,57,Brazil,Free,Writing,Windows,2025-11-04,2026-06-26,81,44.8,302,68,27,Auto,Neutral,0,Yes,No
+U0019,Vihaan Iyer,57,Japan,Plus,Coding,Linux,2026-01-14,2026-03-27,41,22.7,2230,38,13,GPT-5,Neutral,20,Yes,Yes
+U0020,Tanya Rao,58,Australia,Free,Image Generation,iOS,2025-10-06,2026-02-27,155,12.5,1409,32,6,GPT-5.6,Dissatisfied,0,No,Yes
+U0021,Aarav Das,45,Japan,Plus,Coding,Windows,2025-05-14,2026-04-05,68,10.3,1814,9,19,Auto,Very Satisfied,20,No,Yes
+U0022,Priya Rao,31,Canada,Pro,Writing,Android,2025-02-12,2025-12-24,94,43.5,168,99,71,GPT-4o,Very Dissatisfied,200,Yes,Yes
+U0023,Meera Verma,44,Canada,Plus,Customer Support,macOS,2026-02-27,2026-03-05,46,36.1,1365,100,13,GPT-4o,Very Satisfied,20,No,Yes
+U0024,Rohan Pillai,35,United States,Free,Customer Support,Android,2025-12-25,2026-03-13,59,13.0,796,82,65,GPT-4o,Very Dissatisfied,0,No,Yes
+U0025,Ishita Gupta,64,Germany,Free,Learning,Linux,2025-07-02,2026-04-25,68,4.7,2448,65,14,GPT-4o,Very Dissatisfied,0,Yes,No
+U0026,Ananya Malhotra,22,Germany,Free,Brainstorming,Android,2025-01-02,2026-06-18,138,33.9,812,84,15,GPT-4.1,Very Dissatisfied,0,No,No
+U0027,Aditya Joshi,29,Brazil,Plus,Brainstorming,Android,2025-10-30,2026-08-09,33,11.6,1557,51,70,GPT-5.6,Neutral,20,No,Yes
+U0028,Priya Kapoor,65,United Kingdom,Free,Writing,Android,2025-11-26,2026-07-22,114,22.9,880,65,79,GPT-4.1,Very Satisfied,0,Yes,No
+U0029,Diya Mehta,22,UAE,Plus,Learning,Linux,2025-05-31,2025-06-12,12,14.0,1951,24,49,GPT-4o,Dissatisfied,20,Yes,Yes
+U0030,Aarav Nair,53,Canada,Free,Writing,iOS,2026-03-12,2026-05-07,46,39.2,2126,17,59,Auto,Very Dissatisfied,0,No,No
+U0031,Kavya Chawla,33,Australia,Free,Image Generation,iOS,2026-03-13,2026-07-31,115,43.4,1949,80,30,GPT-4.1,Dissatisfied,0,Yes,No
+U0032,Diya Gupta,62,United Kingdom,Free,Data Analysis,Windows,2025-12-10,2026-03-01,139,6.6,622,53,52,GPT-4.1,Very Dissatisfied,0,No,No
+U0033,Ananya Mehta,54,Singapore,Pro,Business,Windows,2026-03-07,2026-06-14,150,45.6,85,120,45,GPT-4.1,Dissatisfied,200,No,Yes
+U0034,Sneha Iyer,43,United Kingdom,Plus,Business,macOS,2025-10-07,2026-05-18,125,4.3,1381,79,68,GPT-5.6,Dissatisfied,20,Yes,Yes
+U0035,Priya Rao,38,Germany,Free,Learning,Android,2026-04-18,2026-05-11,13,14.7,1345,96,53,GPT-4.1,Very Satisfied,0,No,Yes
+U0036,Tanya Reddy,33,Canada,Plus,Coding,Linux,2025-12-25,2026-02-20,167,6.1,169,19,30,GPT-5,Dissatisfied,20,Yes,Yes
+U0037,Rahul Gupta,28,Australia,Plus,Writing,Linux,2026-01-13,2026-02-24,156,30.3,474,3,39,Auto,Dissatisfied,20,No,Yes
+U0038,Vihaan Kapoor,54,India,Plus,Content Creation,Linux,2025-09-06,2025-10-28,179,37.8,2464,54,47,GPT-5.6,Very Dissatisfied,20,No,Yes
+U0039,Priya Bose,45,United Kingdom,Plus,Image Generation,Android,2025-04-19,2025-11-26,93,31.6,1888,78,68,GPT-4o,Dissatisfied,20,No,No
+U0040,Aditya Iyer,60,Singapore,Plus,Content Creation,Windows,2025-03-30,2025-08-19,116,14.0,1908,63,41,GPT-5,Dissatisfied,20,Yes,No
+U0041,Kabir Das,30,United States,Free,Data Analysis,iOS,2025-10-14,2026-08-15,180,42.6,2281,62,71,GPT-5,Dissatisfied,0,No,No
+U0042,Aarav Patel,41,UAE,Plus,Image Generation,Linux,2025-10-29,2026-02-19,104,34.1,1259,44,54,Auto,Neutral,20,No,No
+U0043,Kabir Singh,52,United Kingdom,Free,Data Analysis,macOS,2025-09-15,2026-01-11,31,35.5,1297,94,61,GPT-4.1,Very Dissatisfied,0,No,Yes
+U0044,Rohan Singh,20,India,Free,Image Generation,Android,2025-08-21,2026-02-21,46,16.6,2192,89,16,GPT-4o,Very Satisfied,0,Yes,No
+U0045,Sneha Bose,48,United States,Pro,Writing,iOS,2026-03-28,2026-06-23,48,46.4,1039,62,9,Auto,Very Satisfied,200,Yes,Yes
+U0046,Dev Singh,57,Canada,Plus,Image Generation,iOS,2025-03-29,2026-08-19,64,8.3,1709,57,56,GPT-4.1,Very Dissatisfied,20,No,No
+U0047,Dev Mishra,28,Canada,Plus,Research,Linux,2025-03-03,2025-06-12,54,31.1,1088,9,20,GPT-5.6,Dissatisfied,20,No,No
+U0048,Saanvi Reddy,32,Australia,Free,Brainstorming,macOS,2025-08-26,2026-01-20,73,34.6,1864,54,14,Auto,Satisfied,0,Yes,No
+U0049,Arjun Patel,46,United States,Pro,Business,Android,2025-03-03,2025-08-19,79,29.8,2336,89,51,GPT-4.1,Very Dissatisfied,200,No,No
+U0050,Vihaan Mishra,61,Brazil,Free,Brainstorming,Windows,2025-02-10,2026-04-28,83,30.2,110,97,34,Auto,Very Satisfied,0,Yes,No
+U0051,Vikram Pillai,48,Germany,Team,Learning,Android,2025-10-12,2026-01-12,150,22.6,2019,41,13,GPT-5,Neutral,30,No,No
+U0052,Saanvi Joshi,43,Japan,Free,Coding,Linux,2026-07-18,2026-07-20,117,7.0,1038,59,52,GPT-5.6,Satisfied,0,No,No
+U0053,Rahul Reddy,62,UAE,Free,Writing,Windows,2025-07-28,2025-12-11,141,8.9,1184,80,77,GPT-5,Satisfied,0,No,Yes
+U0054,Tanya Malhotra,27,UAE,Plus,Customer Support,Linux,2025-04-06,2025-07-30,30,23.8,486,90,34,GPT-4o,Dissatisfied,20,No,Yes
+U0055,Rahul Naidu,26,United States,Plus,Customer Support,iOS,2025-05-29,2025-12-11,49,44.5,2086,43,64,GPT-4.1,Very Satisfied,20,No,No
+U0056,Dev Kapoor,52,Singapore,Free,Business,Android,2026-05-17,2026-06-05,115,27.2,1418,111,24,GPT-5,Very Dissatisfied,0,No,Yes
+U0057,Priya Reddy,20,United Kingdom,Free,Image Generation,Linux,2025-11-22,2026-07-22,98,20.4,628,42,12,GPT-4o,Very Satisfied,0,No,Yes
+U0058,Arjun Malhotra,62,Singapore,Free,Writing,Android,2025-06-08,2025-07-16,121,38.2,1090,109,68,GPT-4o,Neutral,0,No,Yes
+U0059,Kavya Patel,45,United States,Plus,Writing,iOS,2025-08-29,2026-07-18,176,44.4,936,21,38,GPT-5.6,Very Satisfied,20,No,Yes
+U0060,Saanvi Kumar,29,United Kingdom,Plus,Research,Windows,2026-01-19,2026-05-09,38,14.0,1692,78,48,Auto,Satisfied,20,No,Yes
+U0061,Diya Pillai,61,Japan,Pro,Research,Windows,2025-09-18,2026-05-11,66,33.0,1910,56,44,Auto,Neutral,200,No,No
+U0062,Rahul Singh,54,Australia,Plus,Customer Support,Windows,2025-07-23,2026-02-04,124,7.8,1567,106,50,GPT-4.1,Very Satisfied,20,Yes,No
+U0063,Saanvi Iyer,64,United Kingdom,Plus,Writing,Windows,2025-12-27,2026-02-21,163,11.6,1031,39,56,GPT-5.6,Very Dissatisfied,20,No,Yes
+U0064,Vihaan Singh,41,Japan,Pro,Image Generation,Android,2025-12-01,2026-07-01,45,12.0,2214,106,21,GPT-4.1,Dissatisfied,200,No,No
+U0065,Ishita Pillai,53,Germany,Team,Writing,iOS,2025-03-19,2025-08-10,58,41.7,1632,1,33,Auto,Very Satisfied,30,No,No
+U0066,Kabir Kapoor,57,Japan,Free,Content Creation,Linux,2026-01-26,2026-07-08,96,7.9,962,28,8,GPT-4o,Neutral,0,No,Yes
+U0067,Arjun Reddy,26,Singapore,Pro,Business,Android,2025-02-08,2025-12-16,127,8.2,966,85,69,GPT-4o,Very Dissatisfied,200,Yes,No
+U0068,Ishita Bose,33,Germany,Free,Writing,Android,2026-02-22,2026-05-04,9,34.1,894,69,45,GPT-5.6,Dissatisfied,0,No,Yes
+U0069,Ishita Pillai,21,Germany,Team,Data Analysis,macOS,2025-04-04,2026-03-09,55,31.9,2450,100,72,GPT-5,Very Satisfied,30,Yes,Yes
+U0070,Diya Das,52,Australia,Team,Research,Windows,2025-06-01,2026-07-09,153,3.1,597,84,3,GPT-5,Very Satisfied,30,No,Yes
+U0071,Dev Das,65,United States,Free,Business,iOS,2025-01-17,2025-07-14,68,5.4,1729,99,46,Auto,Very Dissatisfied,0,Yes,No
+U0072,Vikram Iyer,48,Singapore,Free,Learning,Windows,2025-02-14,2026-08-01,78,23.6,132,62,56,GPT-5.6,Very Satisfied,0,No,Yes
+U0073,Vihaan Rao,51,Australia,Team,Business,Linux,2025-10-09,2026-08-04,141,35.0,1565,77,55,GPT-5.6,Very Satisfied,30,Yes,No
+U0074,Rahul Iyer,38,Australia,Free,Content Creation,macOS,2026-02-28,2026-05-25,117,20.9,394,87,60,GPT-5.6,Very Satisfied,0,Yes,Yes
+U0075,Priya Nair,53,Germany,Team,Writing,iOS,2026-01-17,2026-08-12,34,28.0,2407,45,54,GPT-5.6,Neutral,30,No,No
+U0076,Ishita Kapoor,40,Japan,Plus,Content Creation,Windows,2026-06-04,2026-07-01,40,32.6,923,97,35,Auto,Satisfied,20,No,Yes
+U0077,Kavya Gupta,40,India,Pro,Research,macOS,2025-01-30,2025-08-02,70,34.6,1270,72,51,GPT-5.6,Satisfied,200,Yes,Yes
+U0078,Vikram Mehta,38,Brazil,Free,Brainstorming,Windows,2026-01-21,2026-05-08,117,18.3,1520,113,6,GPT-5,Satisfied,0,Yes,Yes
+U0079,Kabir Pillai,50,United States,Free,Content Creation,iOS,2026-03-11,2026-07-13,156,22.9,1123,14,36,Auto,Dissatisfied,0,No,Yes
+U0080,Diya Joshi,34,Australia,Plus,Content Creation,Windows,2025-02-26,2025-03-05,53,16.6,870,0,63,GPT-4o,Satisfied,20,Yes,No
+U0081,Tanya Iyer,65,India,Free,Learning,Windows,2026-05-28,2026-08-07,172,39.3,300,58,9,GPT-4.1,Very Dissatisfied,0,No,No
+U0082,Priya Singh,57,UAE,Plus,Content Creation,Windows,2025-04-28,2025-11-21,6,46.5,708,55,13,GPT-5,Dissatisfied,20,No,Yes
+U0083,Karan Singh,25,Japan,Free,Image Generation,macOS,2025-12-14,2026-02-08,86,38.1,317,115,44,GPT-4.1,Satisfied,0,Yes,Yes
+U0084,Arjun Gupta,58,UAE,Free,Business,Linux,2025-07-22,2025-10-18,155,9.9,313,97,74,GPT-4o,Very Dissatisfied,0,No,No
+U0085,Arjun Pillai,40,Japan,Plus,Writing,Android,2025-03-11,2026-07-04,114,31.4,1130,59,57,GPT-5.6,Very Satisfied,20,No,No
+U0086,Vihaan Patel,54,Canada,Free,Content Creation,Linux,2026-06-04,2026-07-23,119,29.1,173,60,64,GPT-5,Very Satisfied,0,No,Yes
+U0087,Aditya Patel,51,Japan,Team,Brainstorming,macOS,2026-06-01,2026-06-23,11,14.1,1798,46,47,GPT-4.1,Dissatisfied,30,No,No
+U0088,Kavya Reddy,64,Brazil,Free,Research,Android,2025-12-09,2025-12-25,85,7.3,1588,10,74,GPT-5,Neutral,0,No,No
+U0089,Arjun Mishra,60,Japan,Plus,Writing,iOS,2025-03-28,2025-09-02,144,20.0,1350,65,46,GPT-5.6,Neutral,20,No,Yes
+U0090,Rohan Das,24,Japan,Free,Image Generation,Linux,2026-05-13,2026-06-06,58,48.0,639,4,43,Auto,Satisfied,0,No,Yes
+U0091,Meera Verma,33,UAE,Plus,Brainstorming,Android,2025-06-19,2026-06-23,113,5.0,1497,96,57,GPT-5,Very Dissatisfied,20,Yes,No
+U0092,Sneha Mehta,42,Japan,Plus,Image Generation,iOS,2026-01-12,2026-07-04,147,47.3,1896,20,25,Auto,Satisfied,20,No,Yes
+U0093,Sneha Kumar,36,United States,Pro,Research,Android,2026-07-22,2026-08-20,27,35.0,2118,57,65,GPT-5,Dissatisfied,200,Yes,Yes
+U0094,Rahul Kumar,23,Germany,Free,Data Analysis,Windows,2025-01-28,2026-03-28,14,20.8,1536,40,12,GPT-4.1,Satisfied,0,Yes,Yes
+U0095,Saanvi Bose,19,Australia,Pro,Data Analysis,macOS,2025-05-23,2026-06-15,121,23.2,26,70,77,Auto,Dissatisfied,200,Yes,No
+U0096,Diya Singh,49,Brazil,Free,Image Generation,Windows,2025-05-05,2025-05-29,62,21.9,1877,80,65,Auto,Satisfied,0,Yes,No
+U0097,Priya Sharma,41,United States,Free,Image Generation,Linux,2025-12-28,2026-02-27,147,21.7,355,64,64,Auto,Very Satisfied,0,No,No
+U0098,Ananya Joshi,64,United States,Free,Brainstorming,Android,2026-01-18,2026-03-23,5,19.1,281,17,5,GPT-4.1,Very Dissatisfied,0,No,Yes
+U0099,Rahul Bose,30,India,Free,Data Analysis,Windows,2025-07-06,2025-09-13,17,35.2,1879,40,39,Auto,Dissatisfied,0,No,No
+U0100,Ananya Mehta,41,Singapore,Free,Learning,iOS,2025-10-20,2026-04-20,13,42.0,1364,114,49,GPT-4.1,Satisfied,0,No,No
+U0101,Nisha Chawla,29,Japan,Team,Customer Support,Android,2025-10-01,2025-11-12,109,6.6,2472,13,10,GPT-4.1,Neutral,30,No,No
+U0102,Kavya Malhotra,40,Brazil,Plus,Learning,Android,2025-06-20,2026-06-08,114,18.8,178,81,7,GPT-5.6,Dissatisfied,20,No,Yes
+U0103,Aarav Rao,54,India,Free,Brainstorming,macOS,2026-03-25,2026-04-02,33,6.0,1505,86,57,GPT-4.1,Neutral,0,No,Yes
+U0104,Dev Rao,25,India,Free,Research,iOS,2026-06-27,2026-07-20,102,17.1,1146,66,49,Auto,Very Satisfied,0,No,No
+U0105,Rahul Mehta,63,UAE,Free,Writing,Android,2025-10-20,2026-06-28,52,8.5,308,85,44,GPT-5.6,Very Dissatisfied,0,No,No
+U0106,Meera Verma,33,UAE,Plus,Coding,Android,2026-01-06,2026-05-16,58,8.5,828,70,73,GPT-4.1,Dissatisfied,20,Yes,Yes
+U0107,Vihaan Singh,22,United Kingdom,Plus,Content Creation,Windows,2026-02-12,2026-08-14,123,26.7,1682,57,59,Auto,Neutral,20,Yes,Yes
+U0108,Arjun Malhotra,38,Canada,Free,Content Creation,Linux,2026-05-30,2026-06-06,32,26.3,1250,114,36,GPT-5.6,Neutral,0,Yes,No
+U0109,Arjun Singh,27,United Kingdom,Pro,Brainstorming,Linux,2026-07-01,2026-07-06,129,31.8,2429,43,72,GPT-5.6,Very Satisfied,200,Yes,Yes
+U0110,Dev Gupta,58,Japan,Free,Customer Support,Android,2025-08-04,2026-05-23,107,30.8,129,61,31,GPT-4o,Neutral,0,No,Yes
+U0111,Ananya Verma,38,Germany,Plus,Content Creation,iOS,2026-03-27,2026-07-11,124,23.9,1398,16,47,Auto,Very Dissatisfied,20,Yes,No
+U0112,Diya Pillai,42,Brazil,Free,Learning,macOS,2025-05-06,2025-09-19,116,14.2,401,110,20,GPT-4.1,Very Dissatisfied,0,No,Yes
+U0113,Meera Bose,43,Japan,Free,Business,macOS,2026-06-12,2026-08-10,128,42.6,2042,27,74,GPT-4.1,Very Satisfied,0,Yes,No
+U0114,Sneha Mishra,34,Germany,Free,Learning,Android,2026-04-27,2026-06-02,138,3.4,445,5,51,GPT-5.6,Very Dissatisfied,0,Yes,No
+U0115,Tanya Singh,57,Brazil,Free,Writing,macOS,2025-03-17,2026-04-16,130,23.3,2257,12,50,GPT-4.1,Neutral,0,No,Yes
+U0116,Rohan Mishra,39,UAE,Free,Image Generation,iOS,2026-06-06,2026-07-27,129,4.8,164,19,77,Auto,Satisfied,0,No,No
+U0117,Meera Joshi,54,Australia,Free,Business,Windows,2025-11-03,2026-04-24,130,40.3,2185,47,42,GPT-5.6,Dissatisfied,0,No,Yes
+U0118,Kavya Bose,28,Japan,Plus,Brainstorming,iOS,2025-09-29,2026-07-22,148,13.2,215,18,31,GPT-5.6,Very Dissatisfied,20,Yes,Yes
+U0119,Aarav Pillai,57,UAE,Free,Coding,macOS,2025-11-18,2026-06-20,39,21.6,840,66,26,Auto,Neutral,0,No,No
+U0120,Aditya Verma,64,Australia,Plus,Brainstorming,iOS,2026-04-16,2026-08-10,137,18.4,1456,24,31,GPT-4.1,Very Dissatisfied,20,No,Yes
+U0121,Saanvi Singh,64,Australia,Plus,Customer Support,Windows,2025-08-01,2026-07-20,126,17.3,1433,73,69,GPT-4o,Dissatisfied,20,No,Yes
+U0122,Saanvi Reddy,31,Canada,Plus,Image Generation,Android,2025-10-22,2025-12-01,89,44.6,1055,119,71,GPT-4.1,Satisfied,20,Yes,Yes
+U0123,Diya Reddy,63,UAE,Free,Writing,macOS,2026-06-28,2026-07-12,164,13.5,415,0,70,GPT-5,Dissatisfied,0,No,No
+U0124,Rohan Singh,32,Japan,Plus,Coding,macOS,2025-11-25,2026-04-20,166,5.7,371,53,22,GPT-5.6,Dissatisfied,20,No,Yes
+U0125,Saanvi Reddy,59,Japan,Free,Image Generation,iOS,2025-01-10,2025-11-11,146,30.1,1377,113,17,Auto,Dissatisfied,0,No,Yes
+U0126,Ishita Das,39,Australia,Free,Brainstorming,macOS,2025-06-16,2026-06-25,118,32.2,767,22,78,GPT-4o,Dissatisfied,0,No,Yes
+U0127,Karan Nair,42,Canada,Free,Business,Android,2025-07-09,2025-09-18,123,17.6,1021,42,38,Auto,Very Dissatisfied,0,Yes,No
+U0128,Nisha Iyer,63,Australia,Plus,Writing,Android,2025-03-05,2025-07-04,120,16.8,1665,47,78,GPT-5,Satisfied,20,Yes,No
+U0129,Arjun Pillai,60,Canada,Plus,Data Analysis,Linux,2026-01-18,2026-05-04,180,27.7,1933,111,10,Auto,Dissatisfied,20,No,Yes
+U0130,Dev Nair,51,UAE,Free,Writing,macOS,2025-03-05,2026-08-04,52,28.8,618,91,74,GPT-4o,Very Satisfied,0,No,Yes
+U0131,Rahul Rao,37,India,Free,Learning,Android,2026-06-10,2026-08-02,117,28.4,2293,104,0,GPT-5,Very Dissatisfied,0,Yes,Yes
+U0132,Priya Kumar,44,United Kingdom,Free,Research,iOS,2025-03-07,2025-05-07,18,47.4,1938,47,48,GPT-4o,Dissatisfied,0,No,Yes
+U0133,Tanya Rao,64,Canada,Free,Coding,Windows,2025-12-23,2026-01-22,46,47.7,1614,38,59,Auto,Dissatisfied,0,No,Yes
+U0134,Diya Pillai,60,Singapore,Free,Brainstorming,Windows,2025-12-21,2026-01-29,71,11.5,467,30,26,GPT-5.6,Very Satisfied,0,Yes,No
+U0135,Kavya Reddy,21,United Kingdom,Free,Image Generation,Android,2025-09-08,2025-09-30,103,22.8,2215,29,73,GPT-4.1,Very Dissatisfied,0,No,Yes
+U0136,Saanvi Rao,55,United Kingdom,Plus,Learning,Linux,2026-06-18,2026-07-16,106,16.5,254,63,6,GPT-4.1,Dissatisfied,20,No,No
+U0137,Priya Rao,32,Australia,Free,Research,iOS,2025-11-04,2026-05-15,48,36.9,1944,117,7,Auto,Dissatisfied,0,No,Yes
+U0138,Karan Iyer,23,Japan,Plus,Data Analysis,Windows,2025-09-19,2026-01-01,85,32.1,1847,34,48,Auto,Very Dissatisfied,20,Yes,Yes
+U0139,Rohan Kapoor,18,Canada,Free,Data Analysis,Windows,2026-07-27,2026-08-02,123,12.4,1368,95,61,GPT-5,Very Dissatisfied,0,Yes,No
+U0140,Diya Naidu,41,Japan,Free,Business,iOS,2025-11-26,2026-04-19,98,24.0,1476,12,60,GPT-4.1,Satisfied,0,No,No
+U0141,Priya Reddy,55,Singapore,Pro,Customer Support,macOS,2026-07-31,2026-08-07,38,3.7,2271,25,42,GPT-5,Dissatisfied,200,Yes,No
+U0142,Tanya Das,40,United Kingdom,Free,Research,Linux,2025-09-21,2026-05-29,165,36.3,1892,62,23,Auto,Very Satisfied,0,Yes,Yes
+U0143,Ananya Sharma,50,UAE,Free,Content Creation,Windows,2026-02-27,2026-04-03,162,13.4,623,79,78,GPT-4o,Dissatisfied,0,Yes,Yes
+U0144,Tanya Naidu,36,India,Free,Image Generation,iOS,2026-02-26,2026-03-01,5,26.8,1130,103,22,GPT-5.6,Very Satisfied,0,Yes,Yes
+U0145,Rohan Mishra,43,UAE,Free,Brainstorming,macOS,2026-06-24,2026-07-10,91,15.0,1630,89,28,GPT-4.1,Very Satisfied,0,Yes,Yes
+U0146,Karan Joshi,23,UAE,Plus,Learning,Android,2026-01-22,2026-06-12,122,5.5,43,72,12,Auto,Very Satisfied,20,Yes,Yes
+U0147,Dev Bose,54,India,Pro,Research,Android,2025-10-05,2025-10-28,20,33.8,1153,2,26,Auto,Satisfied,200,No,Yes
+U0148,Saanvi Verma,52,Germany,Plus,Learning,macOS,2026-08-01,2026-08-08,146,40.6,1598,101,10,Auto,Neutral,20,Yes,Yes
+U0149,Priya Iyer,38,India,Free,Customer Support,iOS,2025-03-19,2026-03-02,155,37.6,2444,62,29,GPT-4.1,Very Dissatisfied,0,No,No
+U0150,Meera Kapoor,23,Australia,Plus,Research,iOS,2026-01-25,2026-02-15,159,16.3,1014,91,19,GPT-4o,Neutral,20,No,Yes
+U0151,Vihaan Sharma,29,Singapore,Free,Business,Linux,2025-11-12,2026-06-27,93,37.3,423,71,65,GPT-4o,Very Satisfied,0,Yes,Yes
+U0152,Nisha Naidu,44,Singapore,Free,Writing,Linux,2025-04-06,2026-02-05,154,38.3,1582,115,31,Auto,Very Dissatisfied,0,Yes,No
+U0153,Meera Rao,35,Singapore,Free,Customer Support,iOS,2025-10-03,2026-03-06,69,25.2,264,100,9,GPT-4.1,Neutral,0,Yes,No
+U0154,Kavya Mishra,39,Brazil,Pro,Learning,Android,2025-07-20,2026-03-11,28,9.1,32,56,42,GPT-4o,Very Dissatisfied,200,Yes,No
+U0155,Aditya Mishra,36,UAE,Team,Brainstorming,macOS,2025-07-25,2026-03-27,81,11.0,1636,41,48,GPT-4.1,Dissatisfied,30,No,Yes
+U0156,Dev Mehta,47,Canada,Team,Business,Android,2026-07-13,2026-07-24,175,37.5,115,106,8,GPT-4o,Dissatisfied,30,Yes,No
+U0157,Diya Gupta,56,UAE,Free,Brainstorming,iOS,2025-06-07,2026-06-08,109,38.5,307,68,64,GPT-4o,Very Dissatisfied,0,Yes,No
+U0158,Tanya Mishra,57,India,Free,Brainstorming,iOS,2025-03-29,2025-05-23,64,32.6,1459,96,42,GPT-4o,Very Satisfied,0,Yes,Yes
+U0159,Kabir Iyer,41,Singapore,Free,Business,Linux,2026-06-07,2026-08-12,143,29.1,2361,88,64,GPT-5,Neutral,0,Yes,No
+U0160,Ishita Singh,39,UAE,Free,Data Analysis,Linux,2026-03-02,2026-03-23,30,40.4,585,61,44,GPT-4o,Very Satisfied,0,No,No
+U0161,Aditya Patel,61,United Kingdom,Plus,Data Analysis,Linux,2025-11-04,2025-11-26,30,4.0,1410,22,70,GPT-5,Neutral,20,No,No
+U0162,Diya Joshi,57,Canada,Free,Business,Linux,2025-07-08,2025-10-11,164,32.6,1625,54,49,GPT-5.6,Satisfied,0,Yes,No
+U0163,Vihaan Kapoor,25,Australia,Free,Business,Linux,2025-04-15,2026-05-29,138,11.4,1340,81,40,Auto,Dissatisfied,0,No,Yes
+U0164,Nisha Kumar,55,United States,Pro,Research,Android,2026-04-14,2026-05-28,173,34.8,1223,15,30,GPT-4.1,Very Satisfied,200,Yes,No
+U0165,Arjun Chawla,49,Japan,Free,Research,Linux,2026-02-02,2026-05-20,153,9.2,1576,21,62,GPT-4.1,Satisfied,0,Yes,No
+U0166,Rahul Mishra,53,Japan,Plus,Business,iOS,2025-02-24,2026-02-26,3,24.8,804,87,62,GPT-4o,Dissatisfied,20,No,Yes
+U0167,Vihaan Kapoor,28,UAE,Free,Brainstorming,iOS,2025-02-01,2025-09-14,75,4.5,925,70,65,GPT-5.6,Very Dissatisfied,0,Yes,No
+U0168,Tanya Kumar,59,Canada,Free,Customer Support,Windows,2026-07-10,2026-07-12,113,27.6,1746,57,33,GPT-4.1,Very Satisfied,0,No,Yes
+U0169,Diya Mehta,31,Canada,Plus,Coding,Linux,2025-12-26,2026-08-03,157,31.5,684,44,68,GPT-4.1,Very Dissatisfied,20,Yes,No
+U0170,Saanvi Singh,44,India,Free,Customer Support,macOS,2026-08-10,2026-08-14,132,47.3,395,89,16,GPT-5,Satisfied,0,No,Yes
+U0171,Karan Bose,22,United States,Free,Learning,Linux,2025-05-26,2026-03-17,162,15.1,1701,95,35,GPT-4.1,Dissatisfied,0,No,No
+U0172,Dev Sharma,52,Singapore,Pro,Data Analysis,iOS,2025-04-06,2026-04-15,118,31.6,1472,105,27,GPT-4o,Neutral,200,No,No
+U0173,Aditya Naidu,58,UAE,Free,Coding,Windows,2025-05-14,2026-02-27,125,38.5,203,118,20,GPT-4o,Dissatisfied,0,Yes,No
+U0174,Rohan Rao,41,United Kingdom,Free,Coding,iOS,2025-11-06,2026-01-26,71,7.2,1481,80,39,GPT-5,Dissatisfied,0,Yes,Yes
+U0175,Aarav Mehta,18,India,Plus,Content Creation,Windows,2026-05-04,2026-05-13,34,29.7,2132,110,54,GPT-5,Dissatisfied,20,Yes,Yes
+U0176,Karan Patel,26,United Kingdom,Free,Writing,Linux,2025-04-15,2025-06-06,81,19.5,1230,72,1,Auto,Satisfied,0,No,No
+U0177,Rohan Rao,24,United Kingdom,Free,Writing,Linux,2026-02-26,2026-08-02,176,22.9,894,93,49,GPT-4.1,Dissatisfied,0,No,Yes
+U0178,Diya Gupta,62,India,Free,Customer Support,macOS,2025-03-28,2025-08-02,142,30.0,2493,66,77,Auto,Satisfied,0,No,No
+U0179,Ananya Iyer,18,Germany,Free,Content Creation,macOS,2026-05-22,2026-07-10,29,13.8,2437,49,72,GPT-4o,Neutral,0,Yes,No
+U0180,Vihaan Sharma,43,Japan,Pro,Customer Support,Linux,2025-03-11,2025-03-25,68,12.7,252,98,53,GPT-4o,Dissatisfied,200,Yes,Yes
+U0181,Kabir Patel,43,Brazil,Free,Writing,Android,2025-11-14,2025-12-24,131,44.4,641,89,55,GPT-5,Very Satisfied,0,Yes,Yes
+U0182,Priya Nair,63,United Kingdom,Free,Coding,macOS,2026-04-10,2026-04-24,80,33.0,724,63,44,Auto,Very Dissatisfied,0,No,Yes
+U0183,Nisha Rao,22,Australia,Free,Brainstorming,Windows,2025-10-03,2025-12-02,8,18.1,1763,63,58,Auto,Neutral,0,Yes,No
+U0184,Dev Verma,25,Canada,Plus,Image Generation,Windows,2026-01-12,2026-02-21,66,37.8,2355,5,1,GPT-5,Very Satisfied,20,No,No
+U0185,Karan Rao,33,Singapore,Free,Content Creation,Android,2025-07-03,2025-07-21,142,39.1,1722,105,9,Auto,Neutral,0,Yes,Yes
+U0186,Meera Iyer,37,Germany,Pro,Writing,Linux,2026-06-13,2026-06-18,103,6.1,1910,58,1,GPT-4.1,Satisfied,200,No,No
+U0187,Kavya Iyer,52,Canada,Plus,Research,Windows,2026-04-21,2026-06-07,152,46.7,805,119,52,GPT-5.6,Satisfied,20,No,Yes
+U0188,Aditya Sharma,44,UAE,Team,Coding,macOS,2026-01-21,2026-07-28,79,7.7,2175,91,35,GPT-5.6,Very Satisfied,30,Yes,No
+U0189,Nisha Pillai,54,India,Free,Learning,macOS,2025-03-28,2026-01-19,25,25.7,1620,30,37,GPT-4.1,Neutral,0,No,No
+U0190,Aditya Pillai,55,United States,Plus,Research,Windows,2025-10-06,2026-02-02,20,45.5,562,21,57,GPT-4o,Neutral,20,No,Yes
+U0191,Tanya Kumar,61,Australia,Free,Brainstorming,Windows,2025-08-01,2026-03-20,79,23.9,496,27,41,GPT-5,Very Satisfied,0,Yes,No
+U0192,Karan Chawla,43,UAE,Free,Image Generation,Linux,2025-02-20,2025-12-23,67,39.9,717,31,12,GPT-4o,Very Satisfied,0,Yes,Yes
+U0193,Aarav Reddy,59,United States,Plus,Brainstorming,Linux,2025-08-16,2025-10-21,51,40.1,1529,33,9,GPT-5.6,Very Satisfied,20,Yes,No
+U0194,Arjun Patel,54,Singapore,Free,Learning,iOS,2025-12-06,2026-02-06,11,45.4,212,3,48,GPT-4o,Satisfied,0,No,Yes
+U0195,Meera Gupta,49,Singapore,Plus,Image Generation,iOS,2025-10-14,2026-05-30,39,4.6,1011,7,11,GPT-4.1,Dissatisfied,20,Yes,No
+U0196,Rohan Chawla,40,UAE,Plus,Image Generation,iOS,2025-09-13,2026-08-01,140,38.8,1571,44,72,Auto,Neutral,20,No,No
+U0197,Meera Sharma,48,Japan,Free,Content Creation,Linux,2025-11-23,2026-03-15,8,43.3,1155,29,20,GPT-5.6,Satisfied,0,Yes,No
+U0198,Tanya Reddy,55,Germany,Free,Content Creation,Linux,2025-08-13,2026-06-03,100,19.0,716,3,45,Auto,Very Dissatisfied,0,Yes,Yes
+U0199,Sneha Naidu,32,India,Free,Image Generation,iOS,2025-11-13,2026-02-10,126,4.7,235,0,42,Auto,Satisfied,0,Yes,No
+U0200,Meera Das,51,Germany,Plus,Writing,Android,2025-03-02,2025-03-24,38,29.4,585,90,50,Auto,Very Satisfied,20,No,No
+U0201,Aditya Rao,29,Japan,Plus,Brainstorming,Android,2025-06-11,2026-06-20,112,38.6,2000,28,75,GPT-5,Dissatisfied,20,No,No
+U0202,Arjun Verma,56,Germany,Free,Brainstorming,macOS,2025-01-02,2026-08-11,101,41.3,2329,81,72,GPT-5.6,Dissatisfied,0,Yes,No
+U0203,Vihaan Iyer,60,Germany,Plus,Business,Windows,2025-12-22,2026-03-13,43,31.6,368,33,26,GPT-5,Very Satisfied,20,No,No
+U0204,Ishita Sharma,49,Singapore,Pro,Content Creation,Linux,2025-02-19,2026-03-21,113,36.0,686,48,12,GPT-4o,Very Dissatisfied,200,Yes,Yes
+U0205,Rahul Patel,28,Singapore,Free,Research,Windows,2025-02-04,2025-12-02,6,17.3,433,70,11,GPT-4.1,Very Dissatisfied,0,No,Yes
+U0206,Priya Verma,44,Japan,Team,Image Generation,Android,2026-03-21,2026-04-30,14,7.6,846,84,36,GPT-4.1,Satisfied,30,Yes,Yes
+U0207,Karan Kapoor,36,Brazil,Free,Business,macOS,2026-07-17,2026-08-17,40,5.5,20,12,3,GPT-5,Satisfied,0,No,Yes
+U0208,Sneha Nair,52,Singapore,Free,Research,Android,2025-11-12,2026-06-03,121,25.0,1090,113,48,GPT-4.1,Satisfied,0,No,Yes
+U0209,Kabir Pillai,62,United States,Free,Writing,Android,2026-04-22,2026-05-25,58,40.7,2316,103,69,GPT-4o,Very Dissatisfied,0,Yes,Yes
+U0210,Karan Chawla,33,UAE,Plus,Customer Support,Windows,2026-03-05,2026-07-20,176,42.0,1949,50,4,Auto,Very Dissatisfied,20,Yes,Yes
+U0211,Rahul Verma,61,Singapore,Free,Data Analysis,macOS,2025-06-21,2025-10-07,50,8.7,1739,106,76,GPT-4.1,Neutral,0,Yes,Yes
+U0212,Karan Naidu,18,Brazil,Free,Brainstorming,Linux,2026-02-11,2026-07-02,84,41.5,2133,100,53,GPT-5.6,Dissatisfied,0,Yes,Yes
+U0213,Dev Kapoor,52,Germany,Plus,Learning,Android,2025-04-13,2026-07-30,28,28.3,418,49,62,Auto,Very Dissatisfied,20,No,Yes
+U0214,Meera Gupta,39,Canada,Free,Coding,iOS,2026-02-17,2026-03-25,159,30.4,1650,117,34,GPT-4.1,Very Satisfied,0,No,No
+U0215,Saanvi Gupta,65,UAE,Free,Content Creation,Android,2026-05-19,2026-08-16,176,7.4,938,93,53,Auto,Very Satisfied,0,Yes,No
+U0216,Rohan Malhotra,28,United States,Free,Customer Support,Linux,2026-05-12,2026-08-17,133,42.0,235,51,17,Auto,Very Dissatisfied,0,Yes,Yes
+U0217,Rohan Mehta,35,Germany,Plus,Business,Linux,2025-03-01,2025-11-11,9,23.5,1481,50,15,GPT-5.6,Satisfied,20,No,No
+U0218,Kavya Pillai,34,United States,Free,Customer Support,Windows,2025-07-01,2026-02-28,151,27.8,1415,49,6,GPT-5,Very Dissatisfied,0,Yes,Yes
+U0219,Diya Mehta,26,United Kingdom,Free,Brainstorming,Windows,2025-10-03,2026-04-30,132,3.9,41,28,32,Auto,Neutral,0,No,No
+U0220,Karan Kumar,43,Brazil,Plus,Writing,Windows,2026-04-16,2026-05-18,56,24.0,2137,65,47,Auto,Very Dissatisfied,20,No,No
+U0221,Ishita Bose,63,Australia,Free,Data Analysis,macOS,2025-03-07,2026-02-14,71,31.8,1139,66,30,GPT-5.6,Very Dissatisfied,0,No,No
+U0222,Arjun Sharma,20,Brazil,Free,Brainstorming,macOS,2026-05-25,2026-07-01,67,43.8,1662,43,28,Auto,Dissatisfied,0,No,No
+U0223,Meera Naidu,53,United Kingdom,Plus,Content Creation,Windows,2025-07-05,2025-12-02,25,24.2,1064,28,45,GPT-5,Neutral,20,No,No
+U0224,Nisha Gupta,57,United States,Plus,Business,macOS,2025-10-29,2026-06-23,31,24.2,2395,64,15,GPT-4o,Very Dissatisfied,20,No,No
+U0225,Ananya Rao,47,United Kingdom,Pro,Content Creation,macOS,2025-05-21,2025-08-31,88,21.4,2337,99,10,GPT-4o,Neutral,200,Yes,No
+U0226,Ananya Sharma,28,UAE,Plus,Writing,macOS,2026-04-08,2026-06-17,54,37.3,695,78,55,GPT-4o,Dissatisfied,20,No,No
+U0227,Karan Sharma,51,Canada,Pro,Coding,Windows,2025-02-08,2026-08-08,52,35.9,62,80,31,GPT-5,Neutral,200,No,Yes
+U0228,Ishita Joshi,36,UAE,Free,Image Generation,Linux,2026-05-31,2026-08-14,79,10.5,192,67,43,GPT-4o,Satisfied,0,No,No
+U0229,Nisha Mehta,26,Canada,Plus,Coding,Linux,2025-06-18,2026-08-07,104,3.9,923,64,21,GPT-5.6,Neutral,20,Yes,No
+U0230,Kabir Naidu,25,Singapore,Free,Business,iOS,2025-02-19,2025-04-09,170,7.9,85,15,70,GPT-4.1,Dissatisfied,0,Yes,Yes
+U0231,Aarav Singh,44,United States,Plus,Image Generation,Linux,2026-03-07,2026-04-01,170,26.4,2485,15,36,GPT-5.6,Very Satisfied,20,No,Yes
+U0232,Kavya Mehta,20,Japan,Free,Business,macOS,2025-09-27,2026-06-21,52,19.1,1683,88,61,GPT-4.1,Satisfied,0,Yes,Yes
+U0233,Vihaan Nair,64,United States,Free,Customer Support,macOS,2026-08-11,2026-08-18,39,45.7,2100,58,37,GPT-4.1,Dissatisfied,0,Yes,Yes
+U0234,Meera Reddy,20,India,Free,Research,macOS,2025-10-25,2026-04-27,174,17.1,479,42,45,GPT-4o,Very Dissatisfied,0,No,Yes
+U0235,Nisha Das,42,UAE,Free,Learning,macOS,2025-07-07,2025-09-03,103,21.0,1874,14,16,GPT-5.6,Satisfied,0,Yes,No
+U0236,Dev Bose,57,India,Plus,Research,iOS,2026-08-06,2026-08-16,113,11.2,1560,117,62,GPT-5.6,Dissatisfied,20,No,Yes
+U0237,Vihaan Gupta,32,Germany,Plus,Image Generation,Linux,2025-11-18,2025-11-24,174,26.6,2366,88,79,GPT-5.6,Dissatisfied,20,Yes,No
+U0238,Nisha Joshi,28,Japan,Free,Business,iOS,2025-06-02,2026-08-05,143,43.1,228,111,21,GPT-5.6,Dissatisfied,0,No,Yes
+U0239,Aditya Gupta,33,United States,Free,Business,iOS,2025-02-21,2026-07-25,58,27.8,1555,102,73,GPT-4o,Very Satisfied,0,No,No
+U0240,Aditya Nair,53,India,Free,Writing,Linux,2026-05-25,2026-08-16,5,7.6,1693,79,38,Auto,Very Dissatisfied,0,Yes,No
+U0241,Aditya Kumar,60,Germany,Free,Business,Windows,2025-02-25,2025-10-11,117,17.9,2462,12,28,GPT-5.6,Neutral,0,No,No
+U0242,Tanya Chawla,63,Singapore,Free,Writing,Android,2026-01-18,2026-07-16,28,5.1,677,78,25,GPT-5,Very Satisfied,0,No,Yes
+U0243,Rahul Mehta,46,UAE,Free,Brainstorming,Linux,2025-12-13,2026-01-09,107,5.1,2416,17,63,GPT-5.6,Very Dissatisfied,0,Yes,No
+U0244,Dev Bose,60,Brazil,Free,Brainstorming,Android,2026-06-05,2026-06-27,178,29.0,530,64,49,GPT-4o,Very Dissatisfied,0,Yes,No
+U0245,Karan Das,65,Japan,Plus,Customer Support,Linux,2025-10-29,2026-06-17,35,9.2,2472,110,40,Auto,Satisfied,20,Yes,Yes
+U0246,Kavya Singh,62,Germany,Free,Writing,Android,2025-12-20,2026-08-12,173,9.0,733,71,61,Auto,Very Dissatisfied,0,No,No
+U0247,Priya Sharma,30,Australia,Plus,Research,Android,2026-06-20,2026-06-26,7,20.1,222,87,32,GPT-5,Very Satisfied,20,No,Yes
+U0248,Tanya Reddy,65,Japan,Pro,Learning,macOS,2026-01-03,2026-07-30,116,7.6,2306,65,36,GPT-5.6,Dissatisfied,200,No,No
+U0249,Aditya Naidu,58,Germany,Plus,Brainstorming,Linux,2025-02-25,2025-03-10,65,12.1,1819,94,77,GPT-5,Satisfied,20,No,No
+U0250,Meera Patel,53,Australia,Free,Research,macOS,2025-07-11,2025-10-07,132,8.4,171,74,32,GPT-5.6,Neutral,0,No,Yes
+U0251,Ananya Rao,54,Japan,Free,Content Creation,Windows,2025-11-27,2025-12-23,161,30.7,1238,100,40,Auto,Satisfied,0,Yes,Yes
+U0252,Vikram Verma,31,Germany,Free,Content Creation,Android,2026-03-02,2026-07-19,138,21.2,1436,37,27,Auto,Very Dissatisfied,0,No,Yes
+U0253,Ishita Kumar,61,Germany,Team,Learning,Windows,2026-04-02,2026-06-02,165,30.6,1003,49,32,Auto,Neutral,30,Yes,No
+U0254,Vikram Chawla,23,United States,Free,Research,Linux,2026-04-02,2026-08-04,12,16.3,793,68,0,GPT-5.6,Satisfied,0,Yes,No
+U0255,Ishita Mehta,27,India,Plus,Business,Android,2026-07-05,2026-08-18,112,32.1,300,4,11,GPT-5.6,Very Satisfied,20,Yes,No
+U0256,Tanya Patel,45,Germany,Plus,Coding,iOS,2026-08-12,2026-08-15,67,21.3,1852,86,15,Auto,Very Satisfied,20,Yes,Yes
+U0257,Vihaan Kumar,36,UAE,Plus,Learning,iOS,2026-05-30,2026-06-12,75,38.4,1239,105,3,GPT-4o,Satisfied,20,Yes,Yes
+U0258,Karan Naidu,18,Japan,Team,Image Generation,macOS,2025-10-30,2026-01-11,77,33.5,1533,15,5,GPT-5.6,Very Dissatisfied,30,No,Yes
+U0259,Saanvi Mehta,29,Canada,Free,Brainstorming,Android,2025-12-19,2026-02-11,106,43.8,2104,24,14,GPT-5,Very Dissatisfied,0,Yes,No
+U0260,Tanya Patel,39,Germany,Free,Research,macOS,2025-10-25,2025-11-28,65,7.4,2383,12,36,Auto,Very Satisfied,0,Yes,No
+U0261,Sneha Pillai,38,Singapore,Plus,Research,Windows,2025-12-03,2026-05-08,178,29.3,2321,40,31,GPT-5,Dissatisfied,20,No,No
+U0262,Arjun Das,24,United Kingdom,Free,Brainstorming,Windows,2026-05-07,2026-07-05,115,19.1,1256,107,35,GPT-5,Very Dissatisfied,0,Yes,No
+U0263,Vihaan Patel,55,Canada,Plus,Coding,Linux,2025-01-20,2026-06-23,162,4.4,2388,33,69,Auto,Dissatisfied,20,Yes,No
+U0264,Karan Iyer,50,India,Free,Data Analysis,Linux,2025-10-25,2026-01-01,119,25.6,375,87,21,Auto,Satisfied,0,No,Yes
+U0265,Meera Kapoor,49,Canada,Free,Writing,Android,2026-08-03,2026-08-07,124,45.3,170,47,29,GPT-5.6,Satisfied,0,No,No
+U0266,Sneha Pillai,35,Australia,Plus,Brainstorming,Linux,2025-02-17,2025-03-29,167,17.6,2140,72,22,GPT-4o,Dissatisfied,20,No,Yes
+U0267,Vikram Gupta,48,Brazil,Free,Coding,Linux,2026-01-21,2026-03-19,133,21.3,1418,112,17,GPT-4o,Satisfied,0,Yes,Yes
+U0268,Vikram Gupta,25,Canada,Plus,Learning,Android,2025-08-05,2025-10-20,48,10.1,2470,92,14,GPT-4o,Dissatisfied,20,No,Yes
+U0269,Dev Verma,26,Japan,Plus,Coding,Linux,2026-02-25,2026-03-02,63,4.9,2354,18,7,GPT-5,Neutral,20,Yes,No
+U0270,Kavya Kapoor,48,United Kingdom,Team,Data Analysis,iOS,2025-01-20,2025-11-06,22,12.7,2489,76,18,Auto,Satisfied,30,No,Yes
+U0271,Aditya Pillai,51,Japan,Free,Learning,macOS,2025-03-12,2025-11-02,97,20.3,449,77,12,GPT-5,Dissatisfied,0,Yes,Yes
+U0272,Vihaan Bose,61,Singapore,Pro,Image Generation,iOS,2025-05-14,2026-08-18,155,27.3,9,47,5,Auto,Dissatisfied,200,Yes,No
+U0273,Karan Kumar,23,Australia,Plus,Brainstorming,Linux,2026-08-13,2026-08-14,109,9.0,1959,52,32,GPT-5,Very Satisfied,20,Yes,Yes
+U0274,Vikram Sharma,24,United Kingdom,Free,Learning,Linux,2026-01-20,2026-07-06,53,33.9,1298,32,33,Auto,Dissatisfied,0,No,No
+U0275,Karan Mehta,48,Australia,Plus,Customer Support,Linux,2026-02-28,2026-07-19,143,24.7,1521,44,50,GPT-5,Very Satisfied,20,Yes,No
+U0276,Meera Nair,61,India,Plus,Research,iOS,2025-08-08,2026-04-25,103,38.4,2260,81,0,GPT-5.6,Satisfied,20,No,No
+U0277,Vihaan Patel,43,Brazil,Plus,Image Generation,Android,2025-09-27,2026-01-18,95,6.6,159,91,76,GPT-5.6,Satisfied,20,No,No
+U0278,Aarav Mehta,62,Canada,Free,Brainstorming,macOS,2026-06-15,2026-07-21,50,4.5,2460,86,4,GPT-4.1,Satisfied,0,Yes,Yes
+U0279,Vihaan Gupta,18,United States,Free,Writing,Linux,2026-02-14,2026-05-15,172,20.8,2405,36,71,Auto,Neutral,0,No,No
+U0280,Diya Mishra,50,United States,Free,Image Generation,Windows,2025-07-19,2026-03-08,104,28.9,1074,64,37,GPT-4.1,Very Satisfied,0,No,No
+U0281,Rahul Joshi,55,India,Plus,Business,Windows,2026-07-31,2026-08-15,63,37.1,1884,33,8,GPT-4o,Satisfied,20,Yes,No
+U0282,Priya Kumar,23,Singapore,Free,Content Creation,Windows,2026-06-13,2026-08-20,3,34.5,1083,70,22,GPT-4o,Neutral,0,No,Yes
+U0283,Dev Gupta,30,Canada,Free,Data Analysis,Android,2025-07-07,2026-07-24,175,44.9,783,26,29,GPT-5,Satisfied,0,No,Yes
+U0284,Ishita Nair,48,Germany,Team,Brainstorming,Android,2025-03-22,2026-08-08,158,3.3,2222,63,73,GPT-4.1,Dissatisfied,30,Yes,No
+U0285,Karan Iyer,52,India,Free,Image Generation,Android,2026-08-14,2026-08-15,14,26.7,1738,50,22,GPT-4o,Very Satisfied,0,No,No
+U0286,Aarav Sharma,34,United Kingdom,Plus,Image Generation,Android,2025-08-04,2026-02-14,149,7.5,1486,30,34,GPT-4o,Very Dissatisfied,20,No,No
+U0287,Meera Bose,43,Australia,Free,Business,macOS,2026-03-11,2026-05-03,108,34.5,1529,73,16,Auto,Satisfied,0,Yes,No
+U0288,Diya Naidu,18,United Kingdom,Free,Learning,iOS,2026-03-19,2026-06-24,51,9.6,617,17,80,Auto,Very Dissatisfied,0,No,No
+U0289,Saanvi Gupta,34,UAE,Free,Writing,iOS,2026-07-30,2026-08-17,13,20.9,674,95,42,GPT-4.1,Neutral,0,No,No
+U0290,Nisha Sharma,54,Japan,Free,Research,Android,2026-02-26,2026-03-29,90,42.0,2485,45,41,Auto,Dissatisfied,0,No,Yes
+U0291,Karan Mishra,39,Singapore,Plus,Brainstorming,Linux,2025-10-21,2026-06-15,162,46.0,691,51,9,GPT-5.6,Satisfied,20,No,Yes
+U0292,Aditya Das,41,Brazil,Pro,Image Generation,iOS,2025-10-26,2026-03-11,155,32.0,1116,52,21,GPT-5,Very Satisfied,200,Yes,Yes
+U0293,Kabir Patel,48,Japan,Pro,Coding,Windows,2025-08-04,2025-10-28,102,7.6,266,98,50,Auto,Very Satisfied,200,Yes,No
+U0294,Kavya Rao,46,United Kingdom,Plus,Research,Linux,2025-03-28,2026-02-26,100,16.9,1018,107,21,GPT-5.6,Very Satisfied,20,No,No
+U0295,Sneha Pillai,56,UAE,Free,Brainstorming,iOS,2026-07-08,2026-07-25,141,23.0,2213,67,68,GPT-4.1,Neutral,0,No,Yes
+U0296,Vihaan Pillai,51,United Kingdom,Free,Content Creation,Android,2025-11-12,2026-05-18,106,14.7,1248,60,68,GPT-5.6,Dissatisfied,0,No,No
+U0297,Aarav Malhotra,53,Singapore,Free,Learning,macOS,2025-10-27,2026-02-22,2,27.7,777,20,49,GPT-4o,Satisfied,0,No,Yes
+U0298,Priya Iyer,44,Canada,Plus,Writing,macOS,2026-06-14,2026-07-18,73,32.2,2183,17,37,GPT-5.6,Dissatisfied,20,No,No
+U0299,Kavya Bose,24,Australia,Free,Customer Support,macOS,2025-07-12,2025-12-23,5,9.8,2196,91,56,GPT-5.6,Satisfied,0,Yes,Yes
+U0300,Aarav Bose,47,India,Team,Content Creation,Windows,2025-08-11,2026-02-02,108,17.0,2046,107,18,GPT-5.6,Neutral,30,No,Yes
+U0301,Tanya Bose,63,Canada,Free,Learning,iOS,2025-07-05,2025-10-11,65,39.8,56,31,4,GPT-5,Dissatisfied,0,Yes,Yes
+U0302,Sneha Joshi,53,Japan,Plus,Writing,Android,2025-11-16,2026-04-30,41,31.3,177,61,38,GPT-5,Neutral,20,Yes,Yes
+U0303,Ishita Iyer,43,Canada,Plus,Coding,Windows,2026-03-21,2026-06-12,4,10.5,1135,74,60,Auto,Satisfied,20,No,Yes
+U0304,Diya Verma,59,United Kingdom,Free,Image Generation,Windows,2026-05-27,2026-06-07,176,30.8,250,16,62,GPT-5,Neutral,0,No,No
+U0305,Rohan Sharma,46,Japan,Free,Customer Support,Linux,2026-01-22,2026-04-23,35,14.3,166,89,62,GPT-5,Very Dissatisfied,0,Yes,No
+U0306,Aditya Pillai,36,Australia,Free,Image Generation,Android,2025-10-09,2026-08-11,142,10.2,2180,58,0,Auto,Dissatisfied,0,Yes,Yes
+U0307,Kavya Kumar,30,Japan,Plus,Business,Linux,2025-09-02,2026-02-13,17,32.6,2212,19,78,GPT-4.1,Neutral,20,No,No
+U0308,Ishita Nair,20,Canada,Free,Writing,iOS,2026-06-20,2026-08-01,18,5.0,536,24,12,GPT-5.6,Very Dissatisfied,0,No,No
+U0309,Vikram Mishra,31,UAE,Free,Writing,iOS,2025-09-20,2025-10-15,94,12.9,295,102,7,GPT-4.1,Very Dissatisfied,0,No,No
+U0310,Ananya Mishra,31,Japan,Free,Writing,Windows,2025-09-30,2026-06-27,11,36.0,1249,92,29,Auto,Dissatisfied,0,Yes,Yes
+U0311,Vikram Iyer,24,Brazil,Free,Content Creation,iOS,2026-08-07,2026-08-17,46,28.1,2291,89,54,GPT-5.6,Satisfied,0,Yes,No
+U0312,Vikram Das,53,Germany,Pro,Content Creation,iOS,2025-06-11,2026-03-11,154,22.9,1448,97,55,GPT-4.1,Very Dissatisfied,200,Yes,Yes
+U0313,Karan Naidu,20,Australia,Free,Brainstorming,Windows,2025-09-18,2026-03-21,116,23.1,1631,66,17,GPT-4.1,Very Satisfied,0,No,Yes
+U0314,Rohan Das,27,United States,Pro,Coding,iOS,2025-01-23,2025-11-01,142,26.0,2342,45,19,GPT-5,Neutral,200,No,Yes
+U0315,Diya Gupta,64,Germany,Plus,Business,macOS,2025-11-04,2025-12-21,147,21.0,895,62,73,GPT-5.6,Very Dissatisfied,20,No,Yes
+U0316,Dev Joshi,25,Canada,Free,Brainstorming,Windows,2025-03-22,2025-05-18,86,18.7,1783,81,80,GPT-4o,Very Satisfied,0,No,Yes
+U0317,Aditya Naidu,61,Singapore,Free,Business,Linux,2026-08-02,2026-08-06,84,25.6,909,73,64,GPT-5.6,Satisfied,0,No,No
+U0318,Karan Rao,34,United States,Free,Learning,Linux,2025-05-16,2025-11-04,22,24.4,206,55,16,GPT-5,Dissatisfied,0,Yes,No
+U0319,Karan Kapoor,22,Australia,Free,Learning,Android,2025-07-20,2026-05-03,158,47.9,2152,87,73,GPT-5.6,Very Satisfied,0,No,No
+U0320,Nisha Kumar,28,Germany,Plus,Brainstorming,iOS,2025-07-15,2025-12-26,89,29.7,104,79,18,GPT-4o,Very Satisfied,20,Yes,Yes
+U0321,Nisha Rao,36,India,Pro,Content Creation,Windows,2025-03-29,2025-05-25,14,13.9,609,39,57,GPT-4o,Very Satisfied,200,No,Yes
+U0322,Tanya Mehta,64,United Kingdom,Free,Coding,iOS,2025-07-28,2026-05-03,134,36.8,2252,74,67,GPT-5.6,Neutral,0,Yes,Yes
+U0323,Saanvi Mehta,60,Australia,Free,Content Creation,Windows,2025-10-05,2025-11-01,120,32.5,39,2,37,GPT-4o,Satisfied,0,No,Yes
+U0324,Aditya Bose,63,India,Plus,Coding,macOS,2026-06-29,2026-07-04,48,11.9,1880,118,67,GPT-4.1,Neutral,20,No,No
+U0325,Meera Sharma,50,Australia,Free,Coding,Android,2025-12-22,2026-06-15,91,19.0,1243,112,49,GPT-5.6,Very Dissatisfied,0,No,Yes
+U0326,Arjun Das,61,Brazil,Free,Data Analysis,iOS,2026-02-07,2026-07-25,36,7.0,1570,30,73,GPT-5,Dissatisfied,0,No,No
+U0327,Rahul Naidu,30,United Kingdom,Plus,Customer Support,Linux,2025-05-15,2025-08-28,168,9.2,2222,116,17,GPT-4o,Satisfied,20,Yes,No
+U0328,Vihaan Naidu,38,Singapore,Plus,Learning,Android,2026-06-30,2026-08-15,31,11.3,601,56,35,GPT-5,Satisfied,20,Yes,Yes
+U0329,Meera Sharma,61,India,Free,Content Creation,Windows,2025-10-01,2026-08-07,146,30.6,2447,88,61,GPT-5,Very Dissatisfied,0,No,No
+U0330,Meera Joshi,18,Australia,Free,Learning,macOS,2026-05-19,2026-07-18,36,10.4,931,95,25,GPT-5,Very Satisfied,0,Yes,No
+U0331,Kavya Bose,42,Germany,Plus,Learning,Linux,2025-11-29,2026-07-21,64,22.2,176,120,73,Auto,Very Dissatisfied,20,Yes,Yes
+U0332,Rahul Pillai,51,India,Plus,Data Analysis,Android,2025-02-13,2025-10-22,133,27.2,165,56,50,GPT-4.1,Neutral,20,No,Yes
+U0333,Priya Singh,50,United States,Free,Research,Linux,2025-02-25,2026-08-08,37,23.9,1855,120,69,GPT-5,Dissatisfied,0,No,No
+U0334,Rahul Sharma,23,Australia,Pro,Content Creation,macOS,2025-07-03,2026-02-20,152,43.3,832,91,15,GPT-5.6,Very Satisfied,200,No,No
+U0335,Vihaan Chawla,42,India,Free,Research,Android,2026-01-29,2026-08-03,131,30.5,659,72,19,GPT-5,Satisfied,0,Yes,Yes
+U0336,Priya Singh,30,India,Pro,Brainstorming,Android,2025-11-13,2026-06-29,74,31.2,486,1,58,GPT-4o,Dissatisfied,200,Yes,No
+U0337,Diya Mehta,33,Japan,Plus,Customer Support,Linux,2026-05-03,2026-06-30,105,22.9,2467,80,71,GPT-5,Very Satisfied,20,Yes,Yes
+U0338,Ananya Kumar,23,India,Free,Writing,iOS,2025-02-07,2025-07-05,9,33.0,2476,22,20,GPT-4.1,Very Dissatisfied,0,Yes,No
+U0339,Dev Kumar,45,Japan,Plus,Writing,Android,2025-02-06,2025-05-12,77,17.5,1557,60,17,GPT-5.6,Neutral,20,No,No
+U0340,Vikram Mehta,48,Brazil,Team,Customer Support,iOS,2025-08-03,2026-06-12,15,7.9,2171,77,40,GPT-4.1,Very Dissatisfied,30,No,Yes
+U0341,Kavya Kapoor,32,Australia,Pro,Data Analysis,Windows,2026-05-24,2026-07-29,162,25.4,741,15,3,GPT-4o,Very Satisfied,200,Yes,No
+U0342,Priya Reddy,30,Australia,Free,Customer Support,Windows,2025-12-08,2026-06-05,144,39.3,874,39,38,Auto,Very Dissatisfied,0,No,Yes
+U0343,Ishita Das,30,Germany,Plus,Content Creation,iOS,2025-12-16,2026-03-27,146,30.7,124,117,60,GPT-5.6,Satisfied,20,No,Yes
+U0344,Rahul Naidu,37,Brazil,Plus,Content Creation,Linux,2025-12-10,2026-04-07,106,44.8,234,68,2,GPT-5,Very Dissatisfied,20,No,No
+U0345,Vihaan Rao,54,Brazil,Plus,Learning,macOS,2025-10-15,2025-10-30,87,47.3,2193,76,14,GPT-4.1,Neutral,20,Yes,No
+U0346,Priya Patel,37,United Kingdom,Free,Writing,Android,2026-05-24,2026-06-23,96,23.3,1244,100,4,GPT-5,Very Satisfied,0,No,Yes
+U0347,Sneha Chawla,38,United Kingdom,Free,Writing,Linux,2025-06-07,2025-09-12,88,44.6,2149,86,16,GPT-5,Very Satisfied,0,No,No
+U0348,Vikram Nair,39,UAE,Pro,Coding,Windows,2025-01-05,2025-11-19,12,33.9,2439,66,39,GPT-5.6,Very Dissatisfied,200,No,Yes
+U0349,Aditya Mehta,35,United Kingdom,Plus,Research,Android,2025-07-17,2025-12-10,71,27.0,1811,14,1,Auto,Very Dissatisfied,20,Yes,Yes
+U0350,Tanya Kumar,28,United States,Plus,Customer Support,Linux,2026-07-17,2026-08-06,70,9.4,1165,114,43,Auto,Dissatisfied,20,Yes,Yes
+U0351,Aarav Bose,63,Brazil,Free,Brainstorming,iOS,2025-02-21,2025-06-09,99,5.4,1751,78,45,GPT-4.1,Neutral,0,Yes,Yes
+U0352,Rahul Kapoor,59,UAE,Free,Business,macOS,2025-05-15,2025-07-01,179,24.1,1871,28,18,Auto,Neutral,0,No,No
+U0353,Meera Das,48,UAE,Free,Research,Android,2025-11-29,2026-07-19,125,4.4,1951,98,44,Auto,Very Dissatisfied,0,Yes,Yes
+U0354,Karan Nair,33,Brazil,Plus,Data Analysis,Linux,2025-11-30,2026-01-05,78,27.0,1646,20,61,GPT-4o,Very Satisfied,20,No,Yes
+U0355,Dev Malhotra,60,United States,Free,Brainstorming,iOS,2026-03-22,2026-08-14,88,27.5,972,14,75,Auto,Dissatisfied,0,No,Yes
+U0356,Rahul Verma,42,Germany,Plus,Business,Windows,2025-11-12,2026-06-07,18,29.9,2447,11,27,GPT-5,Very Dissatisfied,20,Yes,Yes
+U0357,Arjun Pillai,61,Germany,Free,Customer Support,Linux,2026-06-29,2026-07-17,100,30.7,1836,101,38,GPT-4o,Neutral,0,Yes,Yes
+U0358,Kavya Chawla,18,Japan,Team,Content Creation,Windows,2026-02-18,2026-03-22,76,5.8,2253,110,36,GPT-5.6,Satisfied,30,No,No
+U0359,Aditya Joshi,30,Japan,Free,Learning,Android,2026-02-20,2026-05-28,112,27.5,715,107,53,GPT-5,Neutral,0,Yes,Yes
+U0360,Aarav Patel,59,Singapore,Free,Business,Linux,2025-01-17,2025-06-13,125,32.6,561,119,54,Auto,Satisfied,0,No,No
+U0361,Tanya Pillai,49,Canada,Free,Image Generation,Android,2026-01-29,2026-04-29,58,11.4,2481,52,69,Auto,Neutral,0,Yes,Yes
+U0362,Dev Bose,64,Japan,Free,Customer Support,iOS,2026-01-13,2026-02-10,149,24.7,332,66,10,Auto,Very Dissatisfied,0,Yes,Yes
+U0363,Sneha Patel,18,UAE,Free,Business,Linux,2026-07-07,2026-08-13,80,30.6,1412,115,60,Auto,Neutral,0,No,No
+U0364,Saanvi Singh,54,Australia,Plus,Coding,iOS,2025-06-21,2025-07-09,178,44.5,1250,74,21,Auto,Very Satisfied,20,No,Yes
+U0365,Saanvi Bose,57,Australia,Free,Customer Support,Android,2025-03-26,2025-08-02,130,6.5,1143,1,14,Auto,Satisfied,0,Yes,No
+U0366,Nisha Verma,39,United States,Pro,Research,Linux,2025-09-25,2026-01-23,125,11.1,2165,119,19,GPT-4o,Dissatisfied,200,No,Yes
+U0367,Rahul Verma,25,India,Plus,Research,iOS,2025-08-04,2026-05-26,89,5.4,1087,51,60,GPT-4.1,Dissatisfied,20,Yes,No
+U0368,Karan Bose,46,Singapore,Free,Content Creation,Linux,2025-09-26,2025-12-09,136,42.2,53,87,5,GPT-5.6,Very Dissatisfied,0,No,No
+U0369,Kavya Gupta,43,UAE,Plus,Data Analysis,Linux,2025-12-10,2026-02-17,69,39.1,1050,98,24,Auto,Neutral,20,Yes,No
+U0370,Tanya Sharma,46,Germany,Free,Data Analysis,Android,2025-01-09,2025-03-19,4,21.5,2156,32,24,GPT-5.6,Very Satisfied,0,Yes,Yes
+U0371,Kavya Mehta,60,Brazil,Free,Research,Windows,2025-05-05,2026-05-02,31,6.9,2481,89,23,GPT-4.1,Neutral,0,No,Yes
+U0372,Rahul Gupta,21,Singapore,Free,Learning,Android,2026-03-14,2026-06-04,66,10.3,308,7,33,GPT-4.1,Satisfied,0,No,Yes
+U0373,Sneha Mehta,45,Canada,Free,Brainstorming,Windows,2026-02-07,2026-03-24,166,25.1,594,116,56,GPT-4.1,Very Satisfied,0,Yes,Yes
+U0374,Vihaan Kapoor,18,India,Plus,Learning,Android,2025-09-14,2026-04-30,5,43.3,614,19,42,GPT-4o,Very Dissatisfied,20,Yes,No
+U0375,Sneha Malhotra,48,United States,Team,Brainstorming,Linux,2026-02-18,2026-03-07,139,13.2,1579,119,45,GPT-4.1,Neutral,30,No,Yes
+U0376,Vihaan Kumar,29,Japan,Plus,Coding,iOS,2026-07-02,2026-07-23,21,40.9,1192,84,24,GPT-4.1,Dissatisfied,20,Yes,No
+U0377,Sneha Patel,55,Canada,Plus,Business,iOS,2026-03-25,2026-05-12,36,4.6,108,8,69,GPT-4.1,Dissatisfied,20,No,Yes
+U0378,Ananya Das,60,Japan,Plus,Business,Linux,2025-02-27,2026-02-07,11,21.2,872,19,74,GPT-5,Very Satisfied,20,Yes,Yes
+U0379,Sneha Sharma,58,India,Free,Customer Support,Windows,2026-04-28,2026-07-16,12,13.9,539,58,78,GPT-5,Very Dissatisfied,0,Yes,Yes
+U0380,Ishita Bose,61,Brazil,Free,Image Generation,macOS,2025-08-14,2025-09-15,52,22.2,1651,41,27,GPT-5.6,Very Dissatisfied,0,Yes,No
+U0381,Vihaan Nair,46,Canada,Plus,Brainstorming,Windows,2025-10-08,2025-12-19,107,10.6,1520,17,12,Auto,Dissatisfied,20,Yes,Yes
+U0382,Sneha Patel,44,UAE,Pro,Research,macOS,2025-01-07,2025-01-14,46,44.7,2436,18,34,Auto,Dissatisfied,200,No,Yes
+U0383,Meera Mishra,37,Germany,Plus,Learning,Windows,2025-02-08,2025-08-11,128,30.5,365,71,30,GPT-5,Very Satisfied,20,Yes,No
+U0384,Tanya Chawla,25,United Kingdom,Free,Business,iOS,2025-08-13,2026-04-07,161,32.7,1137,22,20,GPT-5.6,Very Satisfied,0,No,No
+U0385,Rohan Malhotra,65,India,Free,Image Generation,macOS,2025-09-15,2026-03-05,158,39.2,1861,20,3,GPT-4o,Very Dissatisfied,0,Yes,Yes
+U0386,Diya Pillai,25,Germany,Free,Data Analysis,Windows,2025-11-30,2026-07-02,51,36.6,1339,30,52,GPT-5,Dissatisfied,0,Yes,Yes
+U0387,Sneha Kapoor,41,United Kingdom,Free,Business,macOS,2026-05-12,2026-05-18,112,9.5,1868,80,45,GPT-4.1,Satisfied,0,No,Yes
+U0388,Ananya Kapoor,28,Germany,Free,Data Analysis,Android,2025-03-03,2025-12-15,35,8.0,1911,77,20,Auto,Satisfied,0,Yes,Yes
+U0389,Priya Chawla,64,Singapore,Free,Data Analysis,macOS,2026-05-16,2026-06-12,152,24.3,1900,41,55,Auto,Satisfied,0,Yes,Yes
+U0390,Priya Reddy,62,United States,Free,Business,iOS,2025-02-11,2026-06-07,130,4.5,2180,30,10,Auto,Very Satisfied,0,No,Yes
+U0391,Arjun Kumar,37,United Kingdom,Free,Business,Linux,2025-10-30,2026-03-01,166,48.0,70,95,74,GPT-5.6,Dissatisfied,0,No,Yes
+U0392,Karan Verma,22,Singapore,Pro,Content Creation,Linux,2026-01-15,2026-06-24,119,34.7,10,4,37,GPT-4o,Neutral,200,Yes,Yes
+U0393,Kavya Das,41,UAE,Free,Brainstorming,Windows,2025-02-26,2026-08-07,173,19.4,216,46,46,GPT-5,Very Dissatisfied,0,Yes,Yes
+U0394,Arjun Das,62,Canada,Pro,Data Analysis,Android,2025-09-02,2026-06-05,30,32.2,2381,45,34,Auto,Dissatisfied,200,No,Yes
+U0395,Vihaan Kumar,52,Japan,Free,Customer Support,iOS,2025-12-20,2026-04-14,125,25.6,507,79,47,GPT-5.6,Satisfied,0,No,Yes
+U0396,Vihaan Joshi,27,UAE,Free,Research,macOS,2025-07-03,2025-11-27,20,7.9,1135,66,80,GPT-5.6,Neutral,0,No,Yes
+U0397,Sneha Kumar,32,Japan,Free,Content Creation,iOS,2026-03-07,2026-06-28,166,4.0,779,74,43,GPT-4.1,Dissatisfied,0,No,No
+U0398,Saanvi Kapoor,41,Australia,Free,Coding,macOS,2025-05-16,2026-08-18,79,10.7,1069,45,36,GPT-4o,Satisfied,0,Yes,No
+U0399,Meera Verma,46,Australia,Plus,Content Creation,macOS,2025-06-07,2025-08-28,61,8.3,1301,26,71,GPT-5.6,Neutral,20,No,Yes
+U0400,Nisha Pillai,49,United Kingdom,Free,Business,Android,2026-07-07,2026-07-17,137,16.6,107,19,0,Auto,Very Dissatisfied,0,No,No
+U0401,Sneha Singh,25,UAE,Free,Coding,macOS,2026-08-11,2026-08-13,145,35.8,1815,86,70,GPT-5.6,Neutral,0,Yes,No
+U0402,Kavya Iyer,55,Japan,Plus,Data Analysis,Android,2026-04-02,2026-07-02,24,17.7,2495,25,2,GPT-5.6,Very Dissatisfied,20,No,Yes
+U0403,Vikram Joshi,60,Germany,Pro,Learning,macOS,2025-07-19,2026-03-27,82,30.1,2100,91,54,GPT-4.1,Dissatisfied,200,No,Yes
+U0404,Saanvi Kumar,46,Singapore,Free,Business,Android,2025-12-26,2026-03-14,115,42.3,363,20,54,GPT-4o,Satisfied,0,Yes,Yes
+U0405,Rohan Singh,23,India,Plus,Learning,Android,2026-05-02,2026-07-08,86,6.0,2424,53,22,Auto,Dissatisfied,20,Yes,Yes
+U0406,Meera Joshi,37,UAE,Plus,Image Generation,iOS,2025-10-24,2026-08-03,126,4.9,1241,28,3,GPT-5.6,Satisfied,20,No,No
+U0407,Sneha Nair,35,UAE,Free,Writing,Linux,2025-10-22,2026-05-23,46,25.1,1007,95,46,Auto,Dissatisfied,0,No,No
+U0408,Sneha Nair,21,United Kingdom,Free,Content Creation,iOS,2026-01-18,2026-05-29,148,3.8,1068,112,17,GPT-4.1,Satisfied,0,Yes,No
+U0409,Nisha Malhotra,58,United Kingdom,Free,Writing,Linux,2025-12-31,2026-01-12,75,16.1,319,96,21,Auto,Neutral,0,No,No
+U0410,Kabir Kumar,51,Australia,Free,Content Creation,iOS,2025-04-09,2026-01-07,149,18.8,593,52,43,GPT-5,Very Satisfied,0,Yes,Yes
+U0411,Vikram Iyer,63,Japan,Plus,Writing,iOS,2025-07-12,2026-04-24,158,34.0,2158,58,9,GPT-5.6,Satisfied,20,Yes,No
+U0412,Nisha Singh,39,United Kingdom,Free,Customer Support,Windows,2026-01-07,2026-02-11,114,43.0,2452,95,15,GPT-5,Satisfied,0,Yes,Yes
+U0413,Saanvi Rao,48,Singapore,Free,Coding,macOS,2025-08-03,2025-10-08,21,22.1,462,13,4,Auto,Very Dissatisfied,0,Yes,No
+U0414,Ishita Gupta,56,Canada,Plus,Brainstorming,macOS,2025-02-14,2025-04-22,78,33.0,400,23,44,GPT-5.6,Very Satisfied,20,Yes,No
+U0415,Dev Kumar,22,United States,Free,Brainstorming,Windows,2025-12-27,2026-02-06,129,38.1,995,67,27,GPT-5,Neutral,0,Yes,Yes
+U0416,Ishita Mehta,24,United Kingdom,Free,Content Creation,iOS,2026-06-01,2026-07-31,94,34.4,763,54,27,Auto,Satisfied,0,No,Yes
+U0417,Aditya Nair,53,India,Plus,Writing,Android,2026-04-23,2026-05-07,134,9.1,1484,63,14,GPT-4o,Neutral,20,No,No
+U0418,Rahul Iyer,22,UAE,Free,Content Creation,macOS,2026-07-22,2026-08-04,75,47.3,1757,1,62,GPT-5.6,Dissatisfied,0,No,Yes
+U0419,Ishita Rao,28,United States,Plus,Content Creation,macOS,2026-02-09,2026-05-22,178,29.6,421,43,25,Auto,Dissatisfied,20,Yes,Yes
+U0420,Priya Bose,60,Brazil,Free,Learning,iOS,2025-10-13,2026-08-06,152,15.3,1644,65,35,GPT-5,Dissatisfied,0,Yes,Yes
+U0421,Kabir Bose,21,United States,Free,Business,Windows,2026-05-25,2026-06-23,161,45.4,126,22,48,Auto,Neutral,0,Yes,No
+U0422,Kavya Mishra,47,Canada,Plus,Customer Support,iOS,2025-04-09,2026-05-03,20,32.7,2134,62,64,GPT-4.1,Very Dissatisfied,20,No,Yes
+U0423,Ananya Malhotra,20,India,Free,Research,Linux,2025-05-02,2025-11-14,116,17.2,1546,84,38,GPT-5,Dissatisfied,0,No,Yes
+U0424,Saanvi Joshi,61,Japan,Plus,Brainstorming,iOS,2026-05-15,2026-08-20,29,28.6,2014,60,71,GPT-5,Very Dissatisfied,20,Yes,No
+U0425,Kabir Bose,19,Brazil,Free,Coding,macOS,2026-01-22,2026-06-28,174,18.9,1170,107,46,GPT-4.1,Very Dissatisfied,0,Yes,No
+U0426,Karan Nair,33,Canada,Plus,Customer Support,Linux,2026-03-15,2026-06-11,92,21.5,236,10,8,GPT-4.1,Very Satisfied,20,No,Yes
+U0427,Aarav Naidu,44,Australia,Plus,Coding,iOS,2025-11-30,2025-12-19,118,32.6,1735,75,2,GPT-4.1,Dissatisfied,20,No,No
+U0428,Dev Nair,60,Germany,Free,Research,Linux,2026-05-16,2026-05-28,177,33.4,1381,38,46,GPT-4o,Satisfied,0,No,Yes
+U0429,Tanya Mehta,32,Brazil,Free,Writing,Linux,2025-10-22,2026-03-06,13,16.4,2354,12,75,GPT-4.1,Neutral,0,Yes,No
+U0430,Priya Mehta,37,Singapore,Free,Image Generation,Android,2025-12-22,2026-07-13,20,32.3,1241,25,53,GPT-4o,Neutral,0,No,Yes
+U0431,Aarav Chawla,58,Japan,Free,Brainstorming,iOS,2025-07-11,2026-05-02,128,12.6,1919,119,72,GPT-5.6,Very Dissatisfied,0,Yes,No
+U0432,Rahul Rao,22,Canada,Free,Learning,Android,2025-09-04,2025-11-20,176,37.4,1788,105,36,GPT-5,Neutral,0,Yes,No
+U0433,Diya Nair,53,Singapore,Free,Learning,Windows,2025-06-03,2025-09-09,8,14.1,1276,25,20,GPT-4.1,Satisfied,0,Yes,No
+U0434,Kabir Naidu,21,United States,Plus,Content Creation,Linux,2025-06-30,2026-05-25,11,46.4,1995,38,8,GPT-4o,Neutral,20,Yes,No
+U0435,Arjun Iyer,55,Japan,Plus,Customer Support,iOS,2025-04-25,2026-02-11,129,45.0,2142,113,11,GPT-5,Very Dissatisfied,20,Yes,No
+U0436,Aditya Kapoor,29,Canada,Free,Customer Support,iOS,2026-02-04,2026-08-14,61,45.1,897,52,32,Auto,Very Satisfied,0,No,No
+U0437,Ishita Das,27,Germany,Pro,Business,Android,2026-07-13,2026-08-09,122,33.7,1142,105,39,GPT-5.6,Very Dissatisfied,200,Yes,Yes
+U0438,Diya Gupta,61,United States,Pro,Image Generation,macOS,2026-07-20,2026-08-13,80,31.8,1491,109,56,GPT-4o,Very Satisfied,200,No,No
+U0439,Saanvi Patel,58,Germany,Pro,Learning,Windows,2025-08-30,2026-01-29,54,41.7,661,35,10,GPT-4o,Dissatisfied,200,No,No
+U0440,Priya Nair,64,Japan,Free,Content Creation,iOS,2025-06-14,2026-06-06,67,25.8,1446,88,3,GPT-5.6,Satisfied,0,No,Yes
+U0441,Aarav Joshi,33,Japan,Free,Research,Linux,2025-07-24,2026-06-10,79,17.1,341,87,52,GPT-4.1,Dissatisfied,0,No,Yes
+U0442,Kabir Verma,42,Brazil,Free,Data Analysis,Windows,2025-12-02,2026-04-25,51,6.8,1510,2,71,Auto,Satisfied,0,Yes,No
+U0443,Rohan Gupta,23,Germany,Free,Research,Linux,2025-06-22,2025-07-17,103,30.8,2464,15,1,Auto,Dissatisfied,0,No,No
+U0444,Ishita Iyer,45,Canada,Free,Brainstorming,macOS,2025-07-28,2025-11-02,69,16.0,2029,105,36,GPT-5,Dissatisfied,0,Yes,No
+U0445,Arjun Sharma,61,UAE,Free,Writing,Windows,2025-10-25,2026-03-08,61,30.8,1022,60,17,GPT-4.1,Dissatisfied,0,Yes,No
+U0446,Priya Mishra,33,UAE,Free,Content Creation,Linux,2025-09-20,2025-10-27,25,28.1,218,120,76,GPT-5.6,Very Satisfied,0,No,No
+U0447,Saanvi Joshi,50,UAE,Free,Content Creation,iOS,2026-01-15,2026-02-17,144,4.9,739,16,11,GPT-4.1,Very Dissatisfied,0,No,Yes
+U0448,Kabir Nair,45,Australia,Plus,Customer Support,Linux,2025-11-17,2025-12-09,33,25.5,1155,106,33,Auto,Neutral,20,No,Yes
+U0449,Aditya Bose,27,India,Free,Data Analysis,macOS,2025-06-04,2026-03-15,169,31.6,1807,4,60,GPT-4.1,Satisfied,0,No,No
+U0450,Ishita Bose,49,United States,Free,Research,Windows,2025-02-11,2026-05-09,92,47.5,2302,44,11,GPT-5,Neutral,0,Yes,Yes
+U0451,Vikram Gupta,54,United Kingdom,Free,Learning,Windows,2026-07-31,2026-08-18,55,29.3,21,31,63,GPT-5.6,Neutral,0,Yes,No
+U0452,Ishita Joshi,47,UAE,Free,Business,Android,2026-01-18,2026-06-18,28,40.7,634,76,0,GPT-4.1,Very Satisfied,0,No,No
+U0453,Dev Rao,53,Brazil,Plus,Learning,Windows,2025-08-05,2025-08-29,165,15.7,232,51,32,GPT-5,Satisfied,20,No,Yes
+U0454,Aarav Mehta,49,Singapore,Free,Customer Support,Linux,2025-06-16,2025-12-31,104,15.8,636,16,45,GPT-5.6,Neutral,0,Yes,No
+U0455,Rahul Joshi,41,Brazil,Plus,Research,iOS,2026-05-03,2026-06-06,145,30.0,374,80,54,GPT-5.6,Very Satisfied,20,No,No
+U0456,Diya Rao,45,United States,Free,Business,Android,2026-05-23,2026-07-29,162,32.1,348,19,16,GPT-4.1,Satisfied,0,No,No
+U0457,Dev Reddy,24,UAE,Free,Brainstorming,Android,2026-07-19,2026-07-23,12,26.1,2096,45,32,Auto,Very Satisfied,0,Yes,Yes
+U0458,Rahul Verma,64,UAE,Free,Business,Linux,2025-07-06,2026-01-23,12,6.7,1224,103,33,GPT-4.1,Satisfied,0,Yes,Yes
+U0459,Vihaan Mishra,18,United Kingdom,Free,Business,iOS,2025-09-23,2025-11-16,112,27.0,28,88,51,Auto,Dissatisfied,0,No,No
+U0460,Karan Singh,62,Canada,Plus,Coding,macOS,2025-03-31,2025-06-03,35,3.6,463,61,18,GPT-5,Dissatisfied,20,Yes,Yes
+U0461,Saanvi Pillai,65,UAE,Pro,Business,iOS,2025-06-01,2026-01-29,109,4.0,685,2,57,Auto,Satisfied,200,Yes,No
+U0462,Dev Joshi,49,Brazil,Team,Brainstorming,Linux,2025-02-22,2026-01-29,3,7.6,1773,37,4,GPT-4o,Dissatisfied,30,No,No
+U0463,Diya Reddy,59,Singapore,Free,Business,Windows,2026-06-25,2026-06-26,109,28.9,2271,63,79,GPT-4.1,Dissatisfied,0,No,Yes
+U0464,Meera Singh,61,Germany,Free,Brainstorming,iOS,2025-07-16,2026-03-13,89,22.7,2084,16,37,GPT-4o,Dissatisfied,0,No,No
+U0465,Meera Mishra,30,United Kingdom,Free,Brainstorming,iOS,2025-08-01,2025-12-23,177,36.7,1982,12,53,GPT-4o,Neutral,0,Yes,Yes
+U0466,Tanya Reddy,50,India,Free,Writing,Android,2025-01-19,2026-01-21,67,19.1,654,55,14,Auto,Satisfied,0,Yes,Yes
+U0467,Sneha Gupta,27,Japan,Free,Brainstorming,Windows,2025-12-15,2026-07-03,91,37.6,2286,90,6,GPT-4o,Dissatisfied,0,Yes,Yes
+U0468,Kavya Mishra,25,Canada,Free,Content Creation,macOS,2025-04-15,2026-06-10,144,4.9,436,93,37,GPT-4o,Very Dissatisfied,0,No,Yes
+U0469,Arjun Kumar,44,India,Free,Data Analysis,iOS,2025-12-09,2026-07-06,36,8.5,831,43,36,Auto,Satisfied,0,Yes,No
+U0470,Nisha Malhotra,32,United Kingdom,Free,Learning,iOS,2026-01-05,2026-06-15,171,14.0,2174,117,52,GPT-4o,Very Dissatisfied,0,No,Yes
+U0471,Rahul Rao,28,Singapore,Free,Coding,iOS,2025-01-11,2026-06-24,18,6.8,1294,97,4,GPT-5,Very Dissatisfied,0,Yes,No
+U0472,Priya Joshi,18,Australia,Pro,Image Generation,Linux,2026-07-21,2026-08-17,78,35.5,1289,117,18,GPT-4o,Dissatisfied,200,Yes,No
+U0473,Nisha Joshi,64,United Kingdom,Free,Image Generation,Linux,2025-07-22,2025-12-23,22,4.7,1375,36,27,GPT-5.6,Very Dissatisfied,0,No,No
+U0474,Meera Sharma,50,United States,Plus,Coding,Android,2025-01-29,2026-08-04,152,14.6,1249,33,80,Auto,Neutral,20,Yes,Yes
+U0475,Ishita Pillai,55,Brazil,Plus,Image Generation,Linux,2025-11-02,2025-11-04,117,18.3,972,29,44,GPT-4.1,Neutral,20,Yes,No
+U0476,Vikram Iyer,27,Singapore,Free,Learning,Windows,2025-04-18,2025-10-02,133,29.2,1484,11,7,GPT-4o,Satisfied,0,No,Yes
+U0477,Rahul Patel,43,Australia,Free,Brainstorming,iOS,2026-01-14,2026-07-06,135,21.1,2294,81,54,GPT-4o,Dissatisfied,0,No,Yes
+U0478,Arjun Chawla,25,Canada,Pro,Business,iOS,2025-05-11,2026-01-14,118,8.8,2107,4,20,Auto,Neutral,200,Yes,No
+U0479,Ishita Nair,37,Germany,Free,Customer Support,Android,2026-01-14,2026-06-09,75,4.8,632,62,3,GPT-5,Satisfied,0,No,Yes
+U0480,Saanvi Singh,20,Singapore,Free,Business,Linux,2025-08-09,2025-11-10,126,3.1,2247,39,72,GPT-4o,Neutral,0,No,No
+U0481,Kavya Rao,27,Germany,Plus,Writing,Linux,2025-05-22,2026-02-04,163,23.7,1847,85,79,GPT-4o,Dissatisfied,20,Yes,No
+U0482,Aditya Naidu,54,Australia,Plus,Image Generation,Windows,2025-02-16,2026-05-15,72,32.1,683,82,71,GPT-5.6,Satisfied,20,Yes,Yes
+U0483,Sneha Chawla,35,Canada,Team,Data Analysis,Linux,2025-01-20,2025-05-23,169,45.1,741,56,10,Auto,Very Dissatisfied,30,No,No
+U0484,Dev Reddy,51,Germany,Free,Learning,Android,2026-05-19,2026-05-21,88,22.7,1704,11,14,GPT-5.6,Very Dissatisfied,0,Yes,No
+U0485,Arjun Verma,21,Brazil,Plus,Content Creation,macOS,2025-09-19,2025-11-03,40,16.8,1673,3,7,GPT-4.1,Dissatisfied,20,Yes,No
+U0486,Arjun Malhotra,33,Brazil,Free,Brainstorming,macOS,2025-11-28,2026-04-09,97,45.4,500,63,65,Auto,Dissatisfied,0,Yes,No
+U0487,Ananya Das,32,India,Free,Customer Support,Linux,2026-04-21,2026-06-30,105,5.9,123,75,12,GPT-5,Very Dissatisfied,0,Yes,No
+U0488,Dev Malhotra,28,Canada,Free,Image Generation,iOS,2026-04-02,2026-04-23,163,25.5,588,116,71,GPT-4o,Very Satisfied,0,Yes,No
+U0489,Kavya Singh,34,Singapore,Free,Content Creation,macOS,2025-06-21,2025-06-21,16,45.0,1980,74,65,GPT-4.1,Very Satisfied,0,Yes,Yes
+U0490,Saanvi Patel,45,Canada,Team,Brainstorming,Linux,2026-02-09,2026-08-06,32,40.4,2284,102,40,GPT-4.1,Neutral,30,No,No
+U0491,Diya Das,62,United Kingdom,Free,Coding,Linux,2025-12-16,2026-02-07,118,46.2,1350,60,0,GPT-5.6,Satisfied,0,No,No
+U0492,Karan Naidu,40,Singapore,Plus,Brainstorming,Android,2025-03-25,2025-06-12,138,4.4,1828,49,22,GPT-5.6,Very Satisfied,20,No,No
+U0493,Rohan Pillai,57,Australia,Free,Data Analysis,macOS,2025-01-10,2025-08-24,6,37.1,1470,63,46,GPT-5.6,Neutral,0,No,Yes
+U0494,Aarav Mehta,30,Brazil,Free,Brainstorming,Linux,2026-02-10,2026-03-10,72,28.6,2028,22,8,Auto,Satisfied,0,Yes,Yes
+U0495,Kabir Kapoor,62,Japan,Team,Brainstorming,Android,2025-08-22,2026-05-16,71,11.6,99,87,71,GPT-4o,Very Satisfied,30,No,Yes
+U0496,Aditya Malhotra,51,India,Free,Data Analysis,Windows,2026-02-21,2026-05-02,32,33.6,1916,35,53,Auto,Dissatisfied,0,No,Yes
+U0497,Karan Mehta,45,United States,Team,Data Analysis,macOS,2025-12-09,2025-12-29,147,39.3,929,21,42,GPT-4.1,Very Satisfied,30,Yes,Yes
+U0498,Sneha Malhotra,39,India,Free,Content Creation,Linux,2025-01-25,2026-01-02,65,14.1,1944,101,30,GPT-5.6,Very Dissatisfied,0,No,Yes
+U0499,Rahul Kapoor,62,United States,Free,Research,Windows,2025-05-08,2025-06-20,16,44.3,1550,117,56,GPT-5.6,Neutral,0,No,Yes
+U0500,Ishita Reddy,44,Canada,Free,Brainstorming,Linux,2026-07-27,2026-07-28,76,41.2,1650,1,58,GPT-4o,Dissatisfied,0,No,Yes
