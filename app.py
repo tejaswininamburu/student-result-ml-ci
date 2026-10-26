@@ -1,29 +1,43 @@
-import unittest
-from app import app
+from pathlib import Path
+import joblib
+import pandas as pd
+from flask import Flask, jsonify, request
 
-class TestPredictionApplication(unittest.TestCase):
+app = Flask(__name__)
 
-    def setUp(self):
-        self.client = app.test_client()
+# Your model is saved in the artifacts folder
+MODEL_PATH = Path("artifacts/model.joblib")
 
-    def test_health_endpoint(self):
-        response = self.client.get("/")
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.get_json()["status"], "ok")
+def load_model():
+    if not MODEL_PATH.exists():
+        raise FileNotFoundError(f"{MODEL_PATH} was not found. Run training first.")
+    return joblib.load(MODEL_PATH)
 
-    def test_prediction_success(self):
-        response = self.client.post("/predict", json={
-            "age": 30,
-            "usage_hours": 40,
-            "subscription_type": 1
+@app.get("/")
+def health_check():
+    return jsonify({
+        "status": "ok",
+        "service": "chatgpt-users-prediction"
+    })
+
+@app.post("/predict")
+def predict():
+    data = request.get_json(silent=True)
+    if not data:
+        return jsonify({"error": "JSON request body is required"}), 400
+
+    # Convert incoming JSON into a pandas DataFrame (1 row)
+    sample = pd.DataFrame([data])
+
+    try:
+        model = load_model()
+        prediction = model.predict(sample)[0]
+        
+        return jsonify({
+            "prediction": str(prediction)
         })
-        self.assertEqual(response.status_code, 200)
-        self.assertIn("prediction", response.get_json())
-
-    def test_missing_field_validation(self):
-        response = self.client.post("/predict", json={"age": 30})
-        self.assertEqual(response.status_code, 400)
-        self.assertIn("missing_fields", response.get_json())
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
 
 if __name__ == "__main__":
-    unittest.main()
+    app.run(host="0.0.0.0", port=5000)
