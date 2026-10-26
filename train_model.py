@@ -1,130 +1,131 @@
 
+import os
 import json
-from pathlib import Path
-
 import joblib
 import pandas as pd
-from sklearn.compose import ColumnTransformer
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score, balanced_accuracy_score
+
 from sklearn.model_selection import train_test_split
+from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import OneHotEncoder, StandardScaler
+from sklearn.preprocessing import OneHotEncoder
 from sklearn.impute import SimpleImputer
-from sklearn.pipeline import make_pipeline
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score, classification_report
 
 
-DATA_PATH = Path("chatgpt-users.csv")
-ARTIFACT_DIR = Path("artifacts")
+DATA_FILE = "chatgpt-users.csv"
+MODEL_FILE = "artifacts/chatgpt_satisfaction_pipeline.joblib"
+METRICS_FILE = "outputs/metrics.json"
+DATA_OUTPUT = "outputs/chatgpt-users.csv"
 TARGET = "Satisfaction"
 
-DROP_COLUMNS = [
-    "User_ID",
-    "Name",
-    "Signup_Date",
-    "Last_Active_Date",
-]
 
+def main():
+    if not os.path.exists(DATA_FILE):
+        raise FileNotFoundError(f"Dataset not found: {DATA_FILE}")
 
-def build_pipeline(data):
-    features = data.drop(
-        columns=[TARGET] + DROP_COLUMNS,
-        errors="ignore",
+    data = pd.read_csv(DATA_FILE)
+
+    if TARGET not in data.columns:
+        raise ValueError(f"Target column '{TARGET}' is missing")
+
+    data = data.dropna(subset=[TARGET]).copy()
+
+    if data[TARGET].nunique() < 2:
+        raise ValueError("At least two Satisfaction classes are required")
+
+    data.to_csv(DATA_OUTPUT, index=False)
+
+    drop_columns = [
+        "User_ID",
+        "Name",
+        "Signup_Date",
+        "Last_Active_Date"
+    ]
+
+    X = data.drop(
+        columns=[TARGET] + [
+            col for col in drop_columns if col in data.columns
+        ]
     )
+    y = data[TARGET].astype(str)
 
-    numeric_columns = features.select_dtypes(
+    numeric_columns = X.select_dtypes(
         include=["number"]
     ).columns.tolist()
 
-    categorical_columns = features.select_dtypes(
+    categorical_columns = X.select_dtypes(
         exclude=["number"]
     ).columns.tolist()
 
     numeric_pipeline = Pipeline([
-        ("imputer", SimpleImputer(strategy="median")),
-        ("scaler", StandardScaler()),
+        ("imputer", SimpleImputer(strategy="median"))
     ])
 
     categorical_pipeline = Pipeline([
         ("imputer", SimpleImputer(strategy="most_frequent")),
-        ("encoder", OneHotEncoder(handle_unknown="ignore")),
+        ("encoder", OneHotEncoder(handle_unknown="ignore"))
     ])
 
     preprocessing = ColumnTransformer([
         ("numeric", numeric_pipeline, numeric_columns),
-        ("categorical", categorical_pipeline, categorical_columns),
+        ("categorical", categorical_pipeline, categorical_columns)
     ])
 
     model = Pipeline([
         ("preprocessing", preprocessing),
         ("classifier", RandomForestClassifier(
-            n_estimators=200,
+            n_estimators=100,
             random_state=42,
-            class_weight="balanced",
-        )),
+            class_weight="balanced"
+        ))
     ])
 
-    return model, features
-
-
-def train_model():
-    if not DATA_PATH.exists():
-        raise FileNotFoundError(
-            f"Dataset not found: {DATA_PATH}"
-        )
-
-    data = pd.read_csv(DATA_PATH)
-
-    if TARGET not in data.columns:
-        raise ValueError(
-            f"Target column '{TARGET}' is missing"
-        )
-
-    data = data.dropna(subset=[TARGET])
-
-    if data[TARGET].nunique() < 2:
-        raise ValueError(
-            "At least two satisfaction classes are required"
-        )
-
-    model, features = build_pipeline(data)
-    target = data[TARGET]
+    class_counts = y.value_counts()
+    stratify_values = y if class_counts.min() >= 2 else None
 
     X_train, X_test, y_train, y_test = train_test_split(
-        features,
-        target,
-        test_size=0.20,
+        X,
+        y,
+        test_size=0.2,
         random_state=42,
-        stratify=target,
+        stratify=stratify_values
     )
 
     model.fit(X_train, y_train)
+
     predictions = model.predict(X_test)
-
     accuracy = accuracy_score(y_test, predictions)
-    balanced_accuracy = balanced_accuracy_score(
-        y_test, predictions
-    )
-
-    ARTIFACT_DIR.mkdir(parents=True, exist_ok=True)
-
-    joblib.dump(model, ARTIFACT_DIR / "model.joblib")
 
     metrics = {
         "accuracy": float(accuracy),
-        "balanced_accuracy": float(balanced_accuracy),
-        "test_rows": int(len(y_test)),
-        "train_rows": int(len(y_train)),
-        "target": TARGET,
-        "classes": sorted(target.astype(str).unique().tolist()),
+        "training_records": int(len(X_train)),
+        "testing_records": int(len(X_test)),
+        "total_records": int(len(data)),
+        "target_column": TARGET,
+        "classes": sorted(y.unique().tolist()),
+        "classification_report": classification_report(
+            y_test,
+            predictions,
+            output_dict=True,
+            zero_division=0
+        )
     }
 
-    with open(ARTIFACT_DIR / "metrics.json", "w") as file:
+    os.makedirs("artifacts", exist_ok=True)
+    os.makedirs("outputs", exist_ok=True)
+
+    joblib.dump(model, MODEL_FILE)
+
+    with open(METRICS_FILE, "w") as file:
         json.dump(metrics, file, indent=4)
 
-    print("Training completed.")
-    print(json.dumps(metrics, indent=4))
+    print("Model training completed")
+    print("Accuracy:", accuracy)
+    print("Model saved:", MODEL_FILE)
+    print("Metrics saved:", METRICS_FILE)
+    print("Dataset copy saved:", DATA_OUTPUT)
 
 
 if __name__ == "__main__":
-    train_model()
+    main()
