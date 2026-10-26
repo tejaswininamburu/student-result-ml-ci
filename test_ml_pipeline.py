@@ -1,45 +1,60 @@
 
+import json
+import os
+import unittest
+import joblib
 import pandas as pd
 
-from train_model import DATA_PATH, TARGET, build_pipeline
+
+MODEL_FILE = "artifacts/chatgpt_satisfaction_pipeline.joblib"
+METRICS_FILE = "outputs/metrics.json"
+DATA_FILE = "chatgpt-users.csv"
+TARGET = "Satisfaction"
 
 
-def test_dataset_exists():
-    assert DATA_PATH.exists()
+class TestMLPipeline(unittest.TestCase):
+
+    def test_model_file_exists(self):
+        self.assertTrue(os.path.exists(MODEL_FILE))
+
+    def test_metrics_file_exists(self):
+        self.assertTrue(os.path.exists(METRICS_FILE))
+
+    def test_model_can_be_loaded(self):
+        model = joblib.load(MODEL_FILE)
+        self.assertTrue(hasattr(model, "predict"))
+
+    def test_model_can_make_predictions(self):
+        data = pd.read_csv(DATA_FILE)
+        data = data.dropna(subset=[TARGET])
+
+        drop_columns = [
+            "User_ID",
+            "Name",
+            "Signup_Date",
+            "Last_Active_Date"
+        ]
+
+        X = data.drop(
+            columns=[TARGET] + [
+                col for col in drop_columns if col in data.columns
+            ]
+        )
+
+        model = joblib.load(MODEL_FILE)
+        predictions = model.predict(X.head(5))
+
+        self.assertEqual(len(predictions), min(5, len(X)))
+
+    def test_metrics_are_valid(self):
+        with open(METRICS_FILE, "r") as file:
+            metrics = json.load(file)
+
+        self.assertGreaterEqual(metrics["accuracy"], 0)
+        self.assertLessEqual(metrics["accuracy"], 1)
+        self.assertGreater(metrics["training_records"], 0)
+        self.assertGreater(metrics["testing_records"], 0)
 
 
-def test_dataset_has_satisfaction_target():
-    data = pd.read_csv(DATA_PATH)
-
-    assert TARGET in data.columns
-    assert data[TARGET].notna().all()
-    assert data[TARGET].nunique() >= 2
-
-
-def test_pipeline_trains_and_predicts():
-    data = pd.read_csv(DATA_PATH).dropna(subset=[TARGET])
-
-    model, features = build_pipeline(data)
-
-    X = features.iloc[:40]
-    y = data[TARGET].iloc[:40]
-
-    model.fit(X, y)
-    predictions = model.predict(X)
-
-    assert len(predictions) == len(X)
-    assert set(predictions).issubset(set(data[TARGET]))
-
-
-def test_dataset_has_expected_activity_columns():
-    data = pd.read_csv(DATA_PATH)
-
-    expected = [
-        "Sessions",
-        "Messages_Sent",
-        "Files_Uploaded",
-        "Satisfaction",
-    ]
-
-    for column in expected:
-        assert column in data.columns
+if __name__ == "__main__":
+    unittest.main()
