@@ -1,100 +1,129 @@
+
 import json
+from pathlib import Path
 
 import joblib
-import numpy as np
 import pandas as pd
-
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, confusion_matrix
+from sklearn.compose import ColumnTransformer
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score, balanced_accuracy_score
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
+from sklearn.impute import SimpleImputer
+from sklearn.pipeline import make_pipeline
 
 
-def create_dataset():
-    rng = np.random.default_rng(42)
-    number_of_students = 300
+DATA_PATH = Path("chatgpt-users.csv")
+ARTIFACT_DIR = Path("artifacts")
+TARGET = "Satisfaction"
 
-    data = pd.DataFrame({
-        "attendance": rng.integers(50, 101, number_of_students),
-        "internal_marks": rng.integers(20, 101, number_of_students),
-        "assignment_marks": rng.integers(30, 101, number_of_students),
-        "previous_score": rng.integers(30, 101, number_of_students)
-    })
+DROP_COLUMNS = [
+    "User_ID",
+    "Name",
+    "Signup_Date",
+    "Last_Active_Date",
+]
 
-    data["weighted_score"] = (
-        0.25 * data["attendance"]
-        + 0.35 * data["internal_marks"]
-        + 0.20 * data["assignment_marks"]
-        + 0.20 * data["previous_score"]
+
+def build_pipeline(data):
+    features = data.drop(
+        columns=[TARGET] + DROP_COLUMNS,
+        errors="ignore",
     )
 
-    # 1 = PASS, 0 = FAIL
-    data["result"] = (data["weighted_score"] >= 60).astype(int)
-    return data
+    numeric_columns = features.select_dtypes(
+        include=["number"]
+    ).columns.tolist()
+
+    categorical_columns = features.select_dtypes(
+        exclude=["number"]
+    ).columns.tolist()
+
+    numeric_pipeline = Pipeline([
+        ("imputer", SimpleImputer(strategy="median")),
+        ("scaler", StandardScaler()),
+    ])
+
+    categorical_pipeline = Pipeline([
+        ("imputer", SimpleImputer(strategy="most_frequent")),
+        ("encoder", OneHotEncoder(handle_unknown="ignore")),
+    ])
+
+    preprocessing = ColumnTransformer([
+        ("numeric", numeric_pipeline, numeric_columns),
+        ("categorical", categorical_pipeline, categorical_columns),
+    ])
+
+    model = Pipeline([
+        ("preprocessing", preprocessing),
+        ("classifier", RandomForestClassifier(
+            n_estimators=200,
+            random_state=42,
+            class_weight="balanced",
+        )),
+    ])
+
+    return model, features
 
 
 def train_model():
-    print("Creating dataset...")
-    data = create_dataset()
-    data.to_csv("student_results.csv", index=False)
+    if not DATA_PATH.exists():
+        raise FileNotFoundError(
+            f"Dataset not found: {DATA_PATH}"
+        )
 
-    print("Dataset created successfully.")
-    print("Number of records:", len(data))
+    data = pd.read_csv(DATA_PATH)
 
-    features = [
-        "attendance",
-        "internal_marks",
-        "assignment_marks",
-        "previous_score"
-    ]
+    if TARGET not in data.columns:
+        raise ValueError(
+            f"Target column '{TARGET}' is missing"
+        )
 
-    X = data[features]
-    y = data["result"]
+    data = data.dropna(subset=[TARGET])
+
+    if data[TARGET].nunique() < 2:
+        raise ValueError(
+            "At least two satisfaction classes are required"
+        )
+
+    model, features = build_pipeline(data)
+    target = data[TARGET]
 
     X_train, X_test, y_train, y_test = train_test_split(
-        X,
-        y,
+        features,
+        target,
         test_size=0.20,
         random_state=42,
-        stratify=y
+        stratify=target,
     )
 
-    print("Training records:", len(X_train))
-    print("Testing records :", len(X_test))
-
-    model = Pipeline([
-        ("scaler", StandardScaler()),
-        ("classifier", LogisticRegression(max_iter=1000, random_state=42))
-    ])
-
-    print("Training model...")
     model.fit(X_train, y_train)
-
     predictions = model.predict(X_test)
+
     accuracy = accuracy_score(y_test, predictions)
-    matrix = confusion_matrix(y_test, predictions)
+    balanced_accuracy = balanced_accuracy_score(
+        y_test, predictions
+    )
 
-    print("\nModel Evaluation")
-    print("----------------")
-    print("Accuracy:", round(accuracy, 4))
-    print("\nConfusion Matrix:")
-    print(matrix)
+    ARTIFACT_DIR.mkdir(parents=True, exist_ok=True)
 
-    joblib.dump(model, "student_result_model.pkl")
-    print("\nModel saved as student_result_model.pkl")
+    joblib.dump(model, ARTIFACT_DIR / "model.joblib")
 
     metrics = {
         "accuracy": float(accuracy),
-        "training_records": len(X_train),
-        "testing_records": len(X_test)
+        "balanced_accuracy": float(balanced_accuracy),
+        "test_rows": int(len(y_test)),
+        "train_rows": int(len(y_train)),
+        "target": TARGET,
+        "classes": sorted(target.astype(str).unique().tolist()),
     }
 
-    with open("metrics.json", "w") as file:
+    with open(ARTIFACT_DIR / "metrics.json", "w") as file:
         json.dump(metrics, file, indent=4)
 
-    print("Metrics saved as metrics.json")
-    return accuracy
+    print("Training completed.")
+    print(json.dumps(metrics, indent=4))
 
 
 if __name__ == "__main__":
