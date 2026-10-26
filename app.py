@@ -1,57 +1,29 @@
-from pathlib import Path
-import joblib
-import pandas as pd
-from flask import Flask, jsonify, request
+import unittest
+from app import app
 
-app = Flask(__name__)
+class TestPredictionApplication(unittest.TestCase):
 
-# ⚠️ REPLACE THIS with your actual model filename
-MODEL_PATH = Path("chatgpt_model.pkl")
+    def setUp(self):
+        self.client = app.test_client()
 
-# ⚠️ REPLACE THIS with your exact feature column names
-FEATURES = [
-    "age", 
-    "usage_hours", 
-    "subscription_type"
-]
+    def test_health_endpoint(self):
+        response = self.client.get("/")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.get_json()["status"], "ok")
 
-def load_model():
-    if not MODEL_PATH.exists():
-        raise FileNotFoundError(f"{MODEL_PATH} was not found. Run training first.")
-    return joblib.load(MODEL_PATH)
+    def test_prediction_success(self):
+        response = self.client.post("/predict", json={
+            "age": 30,
+            "usage_hours": 40,
+            "subscription_type": 1
+        })
+        self.assertEqual(response.status_code, 200)
+        self.assertIn("prediction", response.get_json())
 
-@app.get("/")
-def health_check():
-    return jsonify({
-        "status": "ok",
-        "service": "chatgpt-users-prediction"
-    })
-
-@app.post("/predict")
-def predict():
-    data = request.get_json(silent=True)
-    if not data:
-        return jsonify({"error": "JSON request body is required"}), 400
-
-    missing_fields = [feature for feature in FEATURES if feature not in data]
-    if missing_fields:
-        return jsonify({
-            "error": "Missing required fields",
-            "missing_fields": missing_fields
-        }), 400
-
-    sample = pd.DataFrame([[data[f] for f in FEATURES]], columns=FEATURES)
-    model = load_model()
-    
-    prediction_code = int(model.predict(sample)[0])
-    
-    # ⚠️ Adjust based on what your model predicts (e.g. 1 vs 0)
-    prediction = "HIGH_ENGAGEMENT" if prediction_code == 1 else "LOW_ENGAGEMENT"
-
-    return jsonify({
-        "prediction": prediction,
-        "prediction_code": prediction_code
-    })
+    def test_missing_field_validation(self):
+        response = self.client.post("/predict", json={"age": 30})
+        self.assertEqual(response.status_code, 400)
+        self.assertIn("missing_fields", response.get_json())
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    unittest.main()
