@@ -34,7 +34,6 @@ jobs:
       - name: Run ML tests
         run: python -m unittest test_ml_pipeline.py -v
 
-      # --- PRACTICAL 5 STEPS ---
       - name: Run prediction app tests
         run: python -m unittest test_app.py -v
 
@@ -48,7 +47,6 @@ jobs:
           echo "ChatGPT Users ML App" > release_candidate/DEPLOYMENT.txt
           echo "Run: python app.py" >> release_candidate/DEPLOYMENT.txt
           echo "Endpoint: POST /predict" >> release_candidate/DEPLOYMENT.txt
-
 
       - name: Upload release candidate
         uses: actions/upload-artifact@v4
