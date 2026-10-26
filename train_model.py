@@ -34,6 +34,7 @@ def main():
     if data[TARGET].nunique() < 2:
         raise ValueError("At least two Satisfaction classes are required")
 
+    os.makedirs("outputs", exist_ok=True)
     data.to_csv(DATA_OUTPUT, index=False)
 
     drop_columns = [
